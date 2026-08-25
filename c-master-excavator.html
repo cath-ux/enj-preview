@@ -252,6 +252,15 @@ html.js .crow.rv.inview:nth-child(8){transition-delay:.49s}
 .mapband iframe{width:100%;height:320px;display:block;border:0;filter:sepia(.22) saturate(.9) contrast(1.02)}
 .maplink{position:absolute;top:14px;left:14px;z-index:2;background:var(--ink);color:#EFE9DD;font-family:var(--slab);font-size:.78rem;text-decoration:none;padding:10px 14px}
 .maplink:hover{color:#E8B15C}
+
+/* wow pass: progress bar + cta sheen */
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:99;pointer-events:none}
+.scroll-progress i{display:block;height:100%;background:var(--brass);transform-origin:0 50%;transform:scaleX(0)}
+@media (prefers-reduced-motion: no-preference){
+.btn-fill{position:relative;overflow:hidden}
+.btn-fill::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.34),transparent);transform:skewX(-18deg);animation:ctasheen 3.6s ease-in-out infinite}
+@keyframes ctasheen{0%{left:-60%}55%{left:120%}100%{left:120%}}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -566,6 +575,43 @@ html.js .crow.rv.inview:nth-child(8){transition-delay:.49s}
   window.addEventListener('resize', onScroll, {passive:true});
   check();
   setTimeout(function(){ els.forEach(mark); els = []; }, 4000);
+})();
+</script>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  bar.innerHTML = '<i></i>';
+  document.body.appendChild(bar);
+  var fill = bar.firstChild, ticking = false;
+  function paint(){
+    ticking = false;
+    var h = document.documentElement.scrollHeight - innerHeight;
+    fill.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, scrollY / h) : 0) + ')';
+  }
+  addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(paint); } }, {passive:true});
+  paint();
+  if (reduce) return;
+  var el = document.querySelector('.hero .kicker');
+  if (!el) return;
+  var FINAL = el.textContent, CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789/';
+  var t0 = null, DUR = 1100, done = false;
+  function finish(){ if (!done) { done = true; el.textContent = FINAL; } }
+  setTimeout(finish, 1800);
+  document.addEventListener('visibilitychange', finish);
+  function frame(ts){
+    if (done) return;
+    if (!t0) t0 = ts;
+    var p = Math.min(1, (ts - t0) / DUR), keep = Math.floor(FINAL.length * p), out = '';
+    for (var i = 0; i < FINAL.length; i++){
+      var ch = FINAL[i];
+      out += (i < keep || ch === ' ' || ch === '/' || ch === '&' || ch === ',') ? ch : CHARS[(Math.random()*CHARS.length)|0];
+    }
+    el.textContent = out;
+    if (p < 1) requestAnimationFrame(frame); else finish();
+  }
+  requestAnimationFrame(frame);
 })();
 </script>
 </body>

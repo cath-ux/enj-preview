@@ -248,6 +248,15 @@ html.js .brow.rv.inview:nth-child(8){transition-delay:.49s}
 
 .hero-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%;filter:saturate(.8) contrast(1.08) brightness(.9)}
 @media (prefers-reduced-motion: reduce){.hero-vid{display:none}}
+
+/* wow pass: progress bar + cta sheen */
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:99;pointer-events:none}
+.scroll-progress i{display:block;height:100%;background:var(--pipe);transform-origin:0 50%;transform:scaleX(0)}
+@media (prefers-reduced-motion: no-preference){
+.btn-solid{position:relative;overflow:hidden}
+.btn-solid::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.34),transparent);transform:skewX(-18deg);animation:ctasheen 3.6s ease-in-out infinite}
+@keyframes ctasheen{0%{left:-60%}55%{left:120%}100%{left:120%}}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -605,17 +614,29 @@ html.js .brow.rv.inview:nth-child(8){transition-delay:.49s}
       })();
     });
   }
-  function mark(e){ e.classList.add('inview'); counters(e); }
-  if (reduce) { els.forEach(mark); return; }
+  function mark(e, skipCount){
+    e.classList.add('inview');
+    if (skipCount && e.querySelector('[data-count]')) { cpend.push(e); return; }
+    counters(e);
+  }
+  var cpend = [];
+  if (reduce) { els.forEach(function(e){ mark(e); }); return; }
   var pending = false;
-  function check(){
+  function inview(e){
     var vh = window.innerHeight || document.documentElement.clientHeight;
+    var r = e.getBoundingClientRect();
+    return r.top < vh * 0.88 && r.bottom > 0;
+  }
+  function check(){
     els = els.filter(function(e){
-      var r = e.getBoundingClientRect();
-      if (r.top < vh * 0.88 && r.bottom > 0) { mark(e); return false; }
+      if (inview(e)) { mark(e); return false; }
       return true;
     });
-    if (!els.length) {
+    cpend = cpend.filter(function(e){
+      if (inview(e)) { counters(e); return false; }
+      return true;
+    });
+    if (!els.length && !cpend.length) {
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
     }
@@ -628,7 +649,8 @@ html.js .brow.rv.inview:nth-child(8){transition-delay:.49s}
   window.addEventListener('scroll', onScroll, {passive:true});
   window.addEventListener('resize', onScroll, {passive:true});
   check();
-  setTimeout(function(){ els.forEach(mark); els = []; }, 4000);
+  setTimeout(function(){ els.forEach(function(e){ mark(e, true); }); els = []; }, 4000);
+  setTimeout(function(){ cpend.forEach(counters); cpend = []; }, 30000);
 })();
 </script>
 <script>
@@ -638,6 +660,43 @@ html.js .brow.rv.inview:nth-child(8){transition-delay:.49s}
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { v.remove(); return; }
   v.addEventListener('error', function(){ v.remove(); }, true);
   var p = v.play(); if (p && p.catch) p.catch(function(){});
+})();
+</script>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  bar.innerHTML = '<i></i>';
+  document.body.appendChild(bar);
+  var fill = bar.firstChild, ticking = false;
+  function paint(){
+    ticking = false;
+    var h = document.documentElement.scrollHeight - innerHeight;
+    fill.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, scrollY / h) : 0) + ')';
+  }
+  addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(paint); } }, {passive:true});
+  paint();
+  if (reduce) return;
+  var el = document.querySelector('.hero .label');
+  if (!el) return;
+  var FINAL = el.textContent, CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789/';
+  var t0 = null, DUR = 1100, done = false;
+  function finish(){ if (!done) { done = true; el.textContent = FINAL; } }
+  setTimeout(finish, 1800);
+  document.addEventListener('visibilitychange', finish);
+  function frame(ts){
+    if (done) return;
+    if (!t0) t0 = ts;
+    var p = Math.min(1, (ts - t0) / DUR), keep = Math.floor(FINAL.length * p), out = '';
+    for (var i = 0; i < FINAL.length; i++){
+      var ch = FINAL[i];
+      out += (i < keep || ch === ' ' || ch === '/' || ch === '&' || ch === ',') ? ch : CHARS[(Math.random()*CHARS.length)|0];
+    }
+    el.textContent = out;
+    if (p < 1) requestAnimationFrame(frame); else finish();
+  }
+  requestAnimationFrame(frame);
 })();
 </script>
 </body>
