@@ -95,223 +95,22 @@ p{margin:0 0 1rem}
 
 /* services grid */
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:36px}
-@media(max-width:860px){.svc{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.svc{grid-template-columns:1fr}}
-.svc a{background:var(--void);padding:30px 24px 32px;text-decoration:none;display:block;text-align:center;transition:background .2s}
-.svc a:hover{background:var(--slate-2)}
-.svc svg{width:46px;height:46px;stroke:var(--pipe);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 14px;display:block}
-.svc h3{margin:0 0 8px;color:var(--bone)}
-.svc p{margin:0;font-size:.86rem;color:var(--bone-dim)}
-
-/* diagram */
-.diagram figure{margin:0}
-.diagram img{border:1px solid var(--line);filter:saturate(.72) contrast(1.04)}
-.diagram figcaption{font-family:var(--mono);font-size:.7rem;color:var(--gray);letter-spacing:.06em;margin-top:12px}
-
-.built{border-bottom:1px solid var(--line)}
-.built .sec-head{padding-bottom:78px!important}
-.built-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;padding-bottom:78px}
-@media(max-width:860px){.built-grid{grid-template-columns:1fr}}
-.built-grid figure{margin:0;position:relative;background:var(--slate);border:1px solid var(--line)}
-.built-grid img{width:100%;height:240px;object-fit:cover;display:block;transition:transform .5s ease}
-.built-grid figure:hover img{transform:scale(1.04)}
-.btag{position:absolute;top:0;left:0;z-index:2;background:var(--pipe);color:#141414;font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px}
-.built-grid figcaption{padding:14px 16px 16px}
-.built-grid figcaption b{display:block;color:var(--bone);font-size:.98rem}
-.built-grid figcaption span{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray)}
-/* map */
-.map-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;margin-top:34px}
-@media(max-width:860px){.map-grid{grid-template-columns:1fr}}
-.map-grid img{border:1px solid var(--line);filter:grayscale(.35) contrast(1.05)}
-.towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;font-family:var(--mono);font-size:.74rem}
-.towns span{border:1px solid var(--line);padding:6px 12px;color:var(--bone-dim)}
-.note{border-left:2px solid var(--pipe);padding:4px 0 4px 20px;margin-top:26px}
-.note h3{color:var(--pipe);margin-bottom:8px}
-.note p{font-size:.92rem;color:var(--bone-dim);margin:0}
-
-/* faq */
-details{border-bottom:1px solid var(--line);padding:18px 0}
-summary{cursor:pointer;list-style:none;font-family:var(--sans);font-weight:600;font-size:1.02rem;display:flex;justify-content:space-between;gap:18px}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"[+]";font-family:var(--mono);color:var(--pipe);font-size:.8rem}
-details[open] summary::after{content:"[-]"}
-details p{margin:12px 0 0;color:var(--bone-dim);font-size:.94rem;max-width:74ch}
-
-.brail{margin:12px 0 0;padding-top:11px;border-top:1px solid var(--line)}
-.brail b{display:block;font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);margin-bottom:8px}
-.brail ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
-.brail li{margin:0}
-.brail a{display:inline-block;font-family:var(--mono);font-size:.72rem;color:var(--bone);text-decoration:none;background:var(--void);border:1px solid var(--line);padding:6px 10px;transition:background .18s,border-color .18s,color .18s}
-.brail a:hover,.brail a:focus-visible{background:var(--pipe);border-color:var(--pipe);color:var(--void);outline:none}
-.bfin{margin:18px 0 0;padding:14px 16px;background:var(--void);border-left:3px solid var(--pipe);font-size:.86rem;color:var(--gray);line-height:1.6}
-.bfin a{color:var(--pipe);font-weight:600;text-decoration:none;border-bottom:1px solid var(--pipe)}
-.bfin a:hover{color:var(--bone);border-color:var(--bone)}
-.bform{background:var(--void);border:1px solid var(--line);border-top:3px solid var(--pipe);padding:26px 24px 28px}
-.bform .frow{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:11px}
-@media(max-width:560px){.bform .frow{grid-template-columns:1fr}}
-.bform label{display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);margin-bottom:6px}
-.bform input,.bform select{width:100%;background:var(--slate);border:1px solid var(--line);color:var(--bone);font-family:var(--sans);font-size:.9rem;padding:11px 13px;box-sizing:border-box}
-.bform input:focus,.bform select:focus{outline:none;border-color:var(--pipe)}
-.bform button{width:100%;margin-top:8px;cursor:pointer;border:0;font-family:var(--mono);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;padding:15px 18px}
-.bform .req{color:var(--pipe)}
-.bform .fnote{margin:11px 0 0;font-size:.7rem;color:var(--gray);line-height:1.5}
-.bform .fnote a{color:var(--pipe);text-decoration:none;font-weight:600}
-.bform .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
-.close{padding:96px 0;background:var(--slate);border-bottom:1px solid var(--line)}
-.close .wrap{display:grid;grid-template-columns:1fr minmax(300px,400px);gap:44px;align-items:start}
-@media(max-width:820px){.close .wrap{grid-template-columns:1fr}}
-.close h2 span{color:var(--pipe)}
-.tel{font-family:var(--disp);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--pipe);text-decoration:none;display:block;margin-top:12px}
-footer{padding:52px 0 0;font-family:var(--mono);font-size:.76rem;color:var(--gray);border-top:1px solid var(--line)}
-.foot-grid{display:grid;grid-template-columns:1.2fr .8fr 1fr;gap:44px;padding-bottom:34px}
-@media(max-width:820px){.foot-grid{grid-template-columns:1fr;gap:26px}}
-.foot-brand{font-family:var(--disp);font-size:1rem;color:var(--bone);display:block;margin-bottom:10px;letter-spacing:.02em}
-.foot-head{letter-spacing:.2em;color:var(--pipe);display:block;margin-bottom:10px}
-footer p{margin:0 0 10px;line-height:1.7}
-.foot-tel{font-family:var(--disp);font-size:1.2rem;color:var(--pipe);text-decoration:none}
-.foot-links{display:grid;gap:7px}
-.foot-links a{text-decoration:none;color:var(--bone-dim)}
-.foot-links a:hover{color:var(--pipe)}
-.foot-base{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px;padding-bottom:20px}
-.tag{position:fixed;left:14px;bottom:14px;z-index:60;background:var(--pipe);color:var(--void);font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:9px 15px;text-decoration:none;font-weight:600}
-
-/* motion: the strata diagram assembles itself, then the water table line draws */
-@media (prefers-reduced-motion: no-preference){
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-@keyframes growY{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-@keyframes drawX{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-.hero .wrap>div:first-child>*{animation:fadeUp .7s ease both}
-.hero .wrap>div:first-child>*:nth-child(1){animation-delay:.05s}
-.hero .wrap>div:first-child>*:nth-child(2){animation-delay:.16s}
-.hero .wrap>div:first-child>*:nth-child(3){animation-delay:.3s}
-.hero .wrap>div:first-child>*:nth-child(4){animation-delay:.44s}
-.hero .wrap>div:first-child>*:nth-child(5){animation-delay:.58s}
-.layer{transform-origin:top;animation:growY .5s ease both}
-.l1{animation-delay:.55s}.l2{animation-delay:.7s}.l3{animation-delay:.85s}.l4{animation-delay:1s}.l5{animation-delay:1.15s}
-.watermark{transform:scaleX(0);transform-origin:left;animation:drawX .7s ease 1.4s forwards}
-.watermark span{opacity:0;animation:fadeUp .45s ease 1.95s both}
-html.js .rv{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
-html.js .rv.inview{opacity:1;transform:none}
-.strip div:nth-child(2).inview{transition-delay:.07s}
-.strip div:nth-child(3).inview{transition-delay:.14s}
-.strip div:nth-child(4).inview{transition-delay:.21s}
-.strip div:nth-child(5).inview{transition-delay:.28s}
-}
-
-/* field record plate + interactivity */
-.plate{border-bottom:1px solid var(--line)}
-.plate figure{margin:0;position:relative;overflow:hidden}
-.plate img{width:100%;height:56vh;min-height:340px;object-fit:cover;display:block;filter:saturate(.8) contrast(1.04)}
-.plate figcaption{position:absolute;left:0;right:0;bottom:0;background:rgba(11,14,13,.85);border-top:1px solid var(--line);font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);padding:12px 26px}
-.plate figcaption b{color:var(--pipe);font-weight:600}
-.strata .layer{transition:filter .25s ease,opacity .25s ease}
-.strata:hover .layer{opacity:.5}
-.strata .layer:hover{opacity:1;filter:brightness(1.2)}
-@media (prefers-reduced-motion: no-preference){
-@keyframes kenburns{from{transform:scale(1.06)}to{transform:scale(1)}}
-.hero-bg img{animation:kenburns 8s ease-out both}
-html.js .wipe{clip-path:inset(0 100% 0 0)}
-html.js .wipe.inview{clip-path:inset(0 0 0 0);transition:clip-path 1s cubic-bezier(.7,0,.3,1)}
-}
-
-/* fieldnote */
-.fieldnote{border-bottom:1px solid var(--line);background:var(--slate)}
-.fieldnote .wrap{padding:30px 26px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start}
-@media(max-width:760px){.fieldnote .wrap{grid-template-columns:1fr;gap:10px}}
-.fn-tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;color:var(--pipe);white-space:nowrap;padding-top:4px}
-.fieldnote p{margin:0;max-width:90ch;color:var(--bone-dim);font-size:.98rem}
-.fieldnote strong{color:var(--bone)}
-/* coverage map */
-.bmap-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:30px;align-items:start}
-@media(max-width:920px){.bmap-grid{grid-template-columns:1fr}}
-.bmap{position:relative;border:1px solid var(--line);background:var(--slate)}
-.bmap iframe{width:100%;height:540px;display:block;border:0;filter:saturate(.85) contrast(1.05)}
-@media(max-width:920px){.bmap iframe{height:360px}}
-.bmap-tag{position:absolute;top:0;left:0;z-index:2;background:var(--pipe);color:#141414;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;padding:8px 12px}
-@media (prefers-reduced-motion: no-preference){
-html.js .bmap.wipe{clip-path:inset(0 100% 0 0)}
-html.js .bmap.wipe.inview{clip-path:inset(0);transition:clip-path 1s cubic-bezier(.7,0,.2,1)}
-}
-.brows{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
-.brow{background:var(--void);padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;transition:background .2s}
-.brow:hover{background:var(--slate-2)}
-.brow b{font-family:var(--mono);font-size:.66rem;color:var(--pipe);letter-spacing:.12em;padding-top:3px}
-.brow h3{margin:0 0 4px;color:var(--bone);font-size:.92rem}
-.brow h3 a{color:inherit;text-decoration:none;border-bottom:2px solid var(--pipe)}
-.brow h3 a:hover{color:var(--pipe)}
-.brow p{margin:0;font-size:.82rem;color:var(--bone-dim)}
-.ballareas{display:inline-block;background:var(--void);padding:14px 16px;font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;color:var(--pipe);text-decoration:none}
-.ballareas:hover{background:var(--slate-2)}
-@media (prefers-reduced-motion: no-preference){
-html.js .brow.rv{opacity:0;transform:translateX(-14px)}
-html.js .brow.rv.inview{opacity:1;transform:none;transition:opacity .45s ease,transform .45s ease}
-html.js .brow.rv.inview:nth-child(2){transition-delay:.07s}
-html.js .brow.rv.inview:nth-child(3){transition-delay:.14s}
-html.js .brow.rv.inview:nth-child(4){transition-delay:.21s}
-html.js .brow.rv.inview:nth-child(5){transition-delay:.28s}
-html.js .brow.rv.inview:nth-child(6){transition-delay:.35s}
-html.js .brow.rv.inview:nth-child(7){transition-delay:.42s}
-html.js .brow.rv.inview:nth-child(8){transition-delay:.49s}
-}
-/* reviews */
-.recg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:26px 0 18px}
-@media(max-width:920px){.recg{grid-template-columns:1fr}}
-.recg figure{margin:0;background:var(--void);padding:24px 22px;position:relative;display:flex;flex-direction:column}
-.rtag{display:inline-block;align-self:flex-start;background:var(--pipe);color:#141414;font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;padding:5px 9px;margin-bottom:14px}
-.recg blockquote{margin:0 0 16px;font-size:.88rem;color:var(--bone-dim);flex:1}
-.recg figcaption{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;color:var(--gray)}
-/* map band */
-.mapband{position:relative;border-top:3px solid var(--pipe);background:var(--slate)}
-.mapband iframe{width:100%;height:320px;display:block;border:0;filter:grayscale(.25) contrast(1.03)}
-.maplink{position:absolute;top:14px;left:14px;z-index:2;background:var(--void);color:var(--bone);font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-decoration:none;padding:10px 14px;border:1px solid var(--line)}
-.maplink:hover{color:var(--pipe);border-color:var(--pipe)}
-
-.hero-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%;filter:saturate(.8) contrast(1.08) brightness(.9)}
-@media (prefers-reduced-motion: reduce){.hero-vid{display:none}}
-
-/* wow pass: progress bar + cta sheen */
-.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:99;pointer-events:none}
-.scroll-progress i{display:block;height:100%;background:var(--pipe);transform-origin:0 50%;transform:scaleX(0)}
-@media (prefers-reduced-motion: no-preference){
-.btn-solid{position:relative;overflow:hidden}
-.btn-solid::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.34),transparent);transform:skewX(-18deg);animation:ctasheen 3.6s ease-in-out infinite}
-@keyframes ctasheen{0%{left:-60%}55%{left:120%}100%{left:120%}}
-}
-
-/* upgrade suite (B voice) */
-.ndrop{position:relative}
-.ncaret{font-style:normal;font-size:.68em;color:var(--pipe)}
-.npanel{position:absolute;top:100%;left:-16px;min-width:236px;background:var(--slate);border:1px solid var(--line);border-top:2px solid var(--pipe);padding:6px 0;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease,visibility .22s;z-index:60;box-shadow:0 18px 34px -16px rgba(0,0,0,.7)}
-.ndrop:hover .npanel,.ndrop:focus-within .npanel{opacity:1;visibility:visible;transform:none}
-.nav nav .npanel a{display:block;padding:10px 16px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--bone-dim)}
-.nav nav .npanel a:hover{color:var(--pipe);background:rgba(249,115,22,.06)}
-.intro{display:none}
-@media (prefers-reduced-motion: no-preference){
-html.js .intro{display:block;position:fixed;inset:0;z-index:200;pointer-events:none}
-html.js .ip{position:absolute;left:0;right:0;height:50.5%;background:var(--slate)}
-html.js .ip-t{top:0;border-bottom:1px solid var(--line);animation:ipt .6s cubic-bezier(.7,0,.2,1) .8s forwards}
-html.js .ip-b{bottom:0;border-top:1px solid var(--line);animation:ipb .6s cubic-bezier(.7,0,.2,1) .8s forwards}
-@keyframes ipt{to{transform:translateY(-101%)}}
-@keyframes ipb{to{transform:translateY(101%)}}
-html.js .intro-mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;animation:imark .35s ease .75s forwards}
-@keyframes imark{to{opacity:0}}
-html.js .intro-mark span{font-family:var(--disp);font-size:clamp(1.1rem,2.4vw,1.7rem);letter-spacing:.2em;text-transform:uppercase;color:var(--bone);display:block}
-html.js .intro-mark em{display:block;font-style:normal;font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;color:var(--gray);margin:10px 0 12px}
-html.js .intro-mark i{display:block;height:3px;background:var(--pipe);transform:scaleX(0);transform-origin:0 50%;animation:irule .5s cubic-bezier(.7,0,.2,1) .12s forwards}
-@keyframes irule{to{transform:scaleX(1)}}
-}
-section h2{position:relative;padding-bottom:14px}
-section h2::after{content:"";position:absolute;left:0;bottom:0;width:64px;height:3px;background:var(--pipe)}
-.close h2::after{display:none}
-@media (prefers-reduced-motion: no-preference){
-html.js section h2::after{transform:scaleX(0);transform-origin:0 50%;transition:transform .8s cubic-bezier(.7,0,.2,1) .25s}
-html.js section h2.inview::after{transform:scaleX(1)}
-}
-.svc-cell{background:var(--void);padding:30px 24px 26px;text-align:center;transition:background .2s;cursor:pointer}
-.svc-cell:hover{background:var(--slate-2)}
-.svc-cell svg{width:46px;height:46px;stroke:var(--pipe);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 14px;display:block}
-.svc-cell h3{margin:0 0 8px;color:var(--bone)}
-.svc-cell p{margin:0 0 12px;font-size:.86rem;color:var(--bone-dim)}
+.scell{background:var(--void);padding:30px 26px 26px;display:flex;flex-direction:column;transition:background .2s}
+.scell:hover{background:var(--slate-2)}
+.scell svg{width:40px;height:40px;stroke:var(--pipe);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;margin:0 0 16px;display:block}
+.scell h3{margin:0 0 9px;color:var(--bone);font-size:1.02rem}
+.scell > p{margin:0 0 20px;font-size:.86rem;color:var(--bone-dim);line-height:1.62}
+.scell-rel{margin:0 0 20px;padding-top:15px;border-top:1px solid var(--line)}
+.scell-rel > span{display:block;font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gray);margin-bottom:10px}
+.scell-rel ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.scell-rel li{margin:0}
+.scell-rel a{display:inline-block;font-family:var(--mono);font-size:.7rem;color:var(--bone);text-decoration:none;border:1px solid var(--line);padding:5px 9px;transition:background .16s,border-color .16s,color .16s}
+.scell-rel a:hover,.scell-rel a:focus-visible{background:var(--pipe);border-color:var(--pipe);color:var(--void);outline:none}
+.scell-go{margin-top:auto;font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pipe);text-decoration:none;display:inline-flex;align-items:center;gap:9px}
+.scell-go i{transition:transform .18s ease}
+.scell:hover .scell-go i{transform:translateX(5px)}
+@media(max-width:920px){.svc{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.svc{grid-template-columns:1fr}}
 .bdet{text-align:left;border:1px solid var(--line);background:var(--slate);margin-bottom:12px}
 .bdet summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--pipe);padding:10px 12px;display:flex;justify-content:space-between;align-items:center}
 .bdet summary::-webkit-details-marker{display:none}
@@ -595,13 +394,46 @@ html.js .brate.inview .star-row span:nth-child(5){animation-delay:.48s}
       <div>
         <h2>What we are equipped for</h2>
         <div class="svc">
-          <div class="svc-cell" data-href="https://excavatingnj.com/services/septic/installation/"><svg viewBox="0 0 48 48"><rect x="8" y="18" width="32" height="18" rx="4"/><line x1="16" y1="18" x2="16" y2="10"/><line x1="32" y1="18" x2="32" y2="10"/><rect x="13" y="7" width="6" height="3"/><rect x="29" y="7" width="6" height="3"/></svg><h3>Septic installation</h3><p>New systems designed from the soil log and set to grade.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>From failed inspections to aging systems, we handle septic installation, repair, and replacement from start to finish. If a malfunctioning septic system is holding up your home sale or threatening your property’s functionality, our licensed, insured, and certified septic installers respond quickly with reliable solutions. We offer “Pay at Closing” options and work with 203K loans to make the process easier during real estate transactions.</p><div class="brail"><b>Also in this line</b><ul><li><a href="https://excavatingnj.com/services/septic/singulair-green/">Singulair Green ATU</a></li></ul></div></div></details><a class="bopen" href="https://excavatingnj.com/services/septic/installation/">OPEN THE PAGE &rarr;</a></div>
-          <a href="https://excavatingnj.com/services/septic/repairs/"><svg viewBox="0 0 48 48"><path d="M30 12a8 8 0 1 0 6 13l6 6-5 5-6-6a8 8 0 0 1-1-18z"/><line x1="10" y1="38" x2="20" y2="28"/></svg><h3>Septic repairs</h3><p>Targeted fixes, Singulair Green service and water jetting.</p></a>
-          <div class="svc-cell" data-href="https://excavatingnj.com/services/engineering-and-design/"><svg viewBox="0 0 48 48"><path d="M24 6l4 4-16 16-6 2 2-6z"/><line x1="14" y1="34" x2="40" y2="34"/><line x1="20" y1="40" x2="40" y2="40"/></svg><h3>Engineering &amp; design</h3><p>Soil evaluation and township permitting under 7:9A.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>We handle the complete engineering process: soil logs, perc tests, and stamped engineering prints. Whether your property has a high water table, limited space, or has been called “unbuildable,” we specialize in raised mound systems and advanced treatment units (ATUs) that turn tough lots into viable building sites.</p><ul><li>Free site evaluations</li><li>Soil logs and perc tests</li><li>Stamped engineering plans (NJDEP Chapter 199 compliant)</li><li>Raised mound system design for high water tables</li><li>Advanced treatment unit (ATU) specifications for small lake lots</li></ul></div></details><a class="bopen" href="https://excavatingnj.com/services/engineering-and-design/">OPEN THE PAGE &rarr;</a></div>
-          <div class="svc-cell" data-href="https://excavatingnj.com/services/excavation/"><svg viewBox="0 0 48 48"><path d="M6 34h20l6-10h8"/><circle cx="14" cy="40" r="4"/><circle cx="34" cy="40" r="4"/><path d="M32 24V14l8 4"/></svg><h3>Excavation &amp; site work</h3><p>Drainage, driveways, retaining walls and land clearing.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>We grade to exact specifications for foundation excavation, so your contractor can start immediately. Rock removal, ledge blasting, and boulder retaining walls are standard work in Sussex County, and we have the equipment and nearly 20 years of experience to handle it without delays.</p><ul><li>Foundation excavation for basements, additions, and commercial footings</li><li>Rock removal: hydraulic hammering, ledge removal, boulder retaining walls</li><li>Utility trenching with proper compaction to prevent settling</li><li>Driveway and private road construction built to handle New Jersey winters</li><li>Land clearing: forestry mulching and stump removal with minimal soil disturbance</li></ul><div class="brail"><b>Site work pages</b><ul><li><a href="https://excavatingnj.com/services/excavation/drainage/">Drainage</a></li><li><a href="https://excavatingnj.com/services/excavation/driveway-installation/">Driveway installation</a></li><li><a href="https://excavatingnj.com/services/excavation/land-clearning/">Land clearing</a></li><li><a href="https://excavatingnj.com/services/excavation/retaining-walls/">Retaining walls</a></li></ul></div></div></details><a class="bopen" href="https://excavatingnj.com/services/excavation/">OPEN THE PAGE &rarr;</a></div>
-          <div class="svc-cell" data-href="https://excavatingnj.com/services/sewer/camera-inspection/"><svg viewBox="0 0 48 48"><rect x="10" y="14" width="22" height="16" rx="3"/><circle cx="21" cy="22" r="5"/><path d="M32 18l8-4v16l-8-4"/></svg><h3>Sewer camera</h3><p>Diagnosis on video before anyone starts digging.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>Whether you’re tying into municipal systems or addressing sewer line failures, we trench, install, and connect sewer lines with the precision and attention to detail you’d expect from licensed, insured professionals.</p><ul><li>Municipal sewer connections and tie-ins</li><li>Sewer line installation and replacement</li><li>Sewer line repairs and full line replacement</li><li>Utility coordination and permit management</li><li>Proper trenching and compaction for long-term reliability</li></ul></div></details><a class="bopen" href="https://excavatingnj.com/services/sewer/camera-inspection/">OPEN THE PAGE &rarr;</a></div>
-          <a href="https://excavatingnj.com/services/septic/water-jetting/"><svg viewBox="0 0 48 48"><path d="M24 8c6 8 10 13 10 19a10 10 0 0 1-20 0c0-6 4-11 10-19z"/><path d="M20 28a5 5 0 0 0 4 5"/></svg><h3>High-pressure jetting</h3><p>Clearing lines and laterals without open excavation.</p></a>
-        </div></div>
+    <article class="scell rv">
+      <svg viewBox="0 0 48 48"><rect x="8" y="18" width="32" height="18" rx="4"/><line x1="16" y1="18" x2="16" y2="10"/><line x1="32" y1="18" x2="32" y2="10"/><rect x="13" y="7" width="6" height="3"/><rect x="29" y="7" width="6" height="3"/></svg>
+      <h3>Septic installation</h3>
+      <p>New systems designed from the soil log and set to grade, including raised mounds and advanced treatment units on lots that were called unbuildable.</p>
+      <div class="scell-rel"><span>Related pages</span><ul><li><a href="https://excavatingnj.com/services/septic/singulair-green/">Singulair Green ATU</a></li></ul></div>
+      <a class="scell-go" href="https://excavatingnj.com/services/septic/installation/">Open the page <i aria-hidden="true">&rarr;</i></a>
+    </article>
+    <article class="scell rv">
+      <svg viewBox="0 0 48 48"><path d="M30 12a8 8 0 1 0 6 13l6 6-5 5-6-6a8 8 0 0 1-1-18z"/><line x1="10" y1="38" x2="20" y2="28"/></svg>
+      <h3>Septic repairs</h3>
+      <p>Targeted fixes on a system that is failing rather than finished, from a flagged inspection to a drainfield that has stopped taking water.</p>
+      <a class="scell-go" href="https://excavatingnj.com/services/septic/repairs/">Open the page <i aria-hidden="true">&rarr;</i></a>
+    </article>
+    <article class="scell rv">
+      <svg viewBox="0 0 48 48"><path d="M24 6l4 4-16 16-6 2 2-6z"/><line x1="14" y1="34" x2="40" y2="34"/><line x1="20" y1="40" x2="40" y2="40"/></svg>
+      <h3>Engineering and design</h3>
+      <p>Soil logs, perc tests and stamped plans under NJDEP Chapter 199, prepared and carried through township permitting in house.</p>
+      <a class="scell-go" href="https://excavatingnj.com/services/engineering-and-design/">Open the page <i aria-hidden="true">&rarr;</i></a>
+    </article>
+    <article class="scell rv">
+      <svg viewBox="0 0 48 48"><path d="M6 34h20l6-10h8"/><circle cx="14" cy="40" r="4"/><circle cx="34" cy="40" r="4"/><path d="M32 24V14l8 4"/></svg>
+      <h3>Excavation and site work</h3>
+      <p>Foundation digs, rock removal and grading cut to spec, plus the drainage and driveway work that decides whether the grade holds.</p>
+      <div class="scell-rel"><span>Related pages</span><ul><li><a href="https://excavatingnj.com/services/excavation/drainage/">Drainage</a></li><li><a href="https://excavatingnj.com/services/excavation/driveway-installation/">Driveway installation</a></li><li><a href="https://excavatingnj.com/services/excavation/land-clearning/">Land clearing</a></li><li><a href="https://excavatingnj.com/services/excavation/retaining-walls/">Retaining walls</a></li></ul></div>
+      <a class="scell-go" href="https://excavatingnj.com/services/excavation/">Open the page <i aria-hidden="true">&rarr;</i></a>
+    </article>
+    <article class="scell rv">
+      <svg viewBox="0 0 48 48"><rect x="10" y="14" width="22" height="16" rx="3"/><circle cx="21" cy="22" r="5"/><path d="M32 18l8-4v16l-8-4"/></svg>
+      <h3>Sewer services</h3>
+      <p>Municipal tie-ins, line replacement and trenching backfilled to compaction, so the ground does not settle over the run.</p>
+      <div class="scell-rel"><span>Related pages</span><ul><li><a href="https://excavatingnj.com/services/sewer/camera-inspection/">Camera inspection</a></li></ul></div>
+      <a class="scell-go" href="https://excavatingnj.com/services/sewer/">Open the page <i aria-hidden="true">&rarr;</i></a>
+    </article>
+    <article class="scell rv">
+      <svg viewBox="0 0 48 48"><path d="M24 8c6 8 10 13 10 19a10 10 0 0 1-20 0c0-6 4-11 10-19z"/><path d="M20 28a5 5 0 0 0 4 5"/></svg>
+      <h3>High-pressure jetting</h3>
+      <p>Clearing lines and laterals without opening the ground, which is often the difference between a service call and an excavation.</p>
+      <a class="scell-go" href="https://excavatingnj.com/services/septic/water-jetting/">Open the page <i aria-hidden="true">&rarr;</i></a>
+    </article>
+  </div></div>
     </div>
   </div>
 </section>
@@ -835,13 +667,6 @@ html.js .brate.inview .star-row span:nth-child(5){animation-delay:.48s}
     }
     card.addEventListener('click', fly);
     card.addEventListener('keydown', function(ev){ if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); fly(); } });
-  });
-  Array.prototype.forEach.call(document.querySelectorAll('.svc-cell'), function(cell){
-    cell.addEventListener('click', function(ev){
-      if (ev.target.closest('details') || ev.target.closest('a')) return;
-      var d = cell.querySelector('details');
-      if (d) d.open = !d.open;
-    });
   });
   function mark(e, skipCount){
     e.classList.add('inview');
