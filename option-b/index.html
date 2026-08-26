@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+<head><script>document.documentElement.classList.add('js')</script>
+<!-- PRODUCTION METAS when built (blueprint 4a): Title 52ch: "NW NJ Septic & Excavation | Excavating New Jersey LLC" / Description 150ch: "Failed septic inspection before a home closing? At Excavating New Jersey LLC, we give firm quotes that hold to closing day. Get your septic quote today." -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Option B: The Ground Beneath | Excavating New Jersey LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#0B0E0D; --slate:#121716; --slate-2:#1A2120; --bone:#E9E6DF; --bone-dim:rgba(233,230,223,.6);
+  --pipe:#F97316; --rust:#C25A2E; --ochre:#C8992F; --olive:#6E7A3C; --gray:#8A8F8C;
+  --line:rgba(233,230,223,.16);
+  --disp:'Archivo Black',Impact,sans-serif; --mono:'IBM Plex Mono',monospace; --sans:'IBM Plex Sans',system-ui,sans-serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-size:16.5px;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 26px}
+h1,h2,h3{margin:0;font-family:var(--disp);font-weight:400;line-height:1.02;letter-spacing:-.025em;text-transform:uppercase}
+h1{font-size:clamp(2.5rem,6.4vw,5.2rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.9rem)}
+h3{font-size:1.02rem;letter-spacing:.01em}
+p{margin:0 0 1rem}
+.label{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--pipe)}
+.rulebar{height:1px;background:var(--line);margin:0}
+.btn{display:inline-block;font-family:var(--mono);font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:16px 26px;text-decoration:none;border:1px solid var(--pipe);color:var(--pipe);transition:.18s}
+.btn:hover{background:var(--pipe);color:var(--void)}
+.btn-solid{background:var(--pipe);color:var(--void)}
+.btn-solid:hover{background:var(--bone);border-color:var(--bone)}
+
+.nav{position:sticky;top:0;z-index:40;background:rgba(11,14,13,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:70px}
+.nav img{height:46px;background:var(--bone);padding:6px 12px}
+.nav nav{margin-left:auto;display:flex;gap:24px;font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
+.nav nav a{text-decoration:none;color:var(--bone-dim)}
+.nav nav a:hover{color:var(--pipe)}
+.nav .call{font-family:var(--mono);font-size:.82rem;color:var(--pipe);text-decoration:none;font-weight:600;white-space:nowrap}
+@media(max-width:940px){.nav nav{display:none}}
+
+/* hero: type-led, strata diagram */
+.hero{border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:72% 30%;filter:saturate(.55) contrast(1.05)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(96deg,rgba(11,14,13,.97) 0%,rgba(11,14,13,.9) 46%,rgba(11,14,13,.62) 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;padding:88px 26px 0;align-items:end}
+@media(max-width:960px){.hero .wrap{grid-template-columns:1fr;padding-bottom:0;gap:36px}}
+.display-h{font-family:var(--disp);font-weight:400;line-height:1.02;letter-spacing:-.025em;text-transform:uppercase;font-size:clamp(2.5rem,6.4vw,5.2rem);margin:18px 0 0;color:var(--bone)}
+.display-h span{color:var(--pipe);display:block}
+.hero .lede{color:var(--bone-dim);font-size:clamp(1rem,1.5vw,1.15rem);max-width:52ch;margin:24px 0 30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:70px}
+.spec{font-family:var(--mono);font-size:.74rem;color:var(--gray);border-top:1px solid var(--line);padding-top:14px;margin-bottom:70px;display:grid;gap:5px}
+.spec b{color:var(--bone);font-weight:500}
+
+/* strata */
+.strata{position:relative;height:420px;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+@media(max-width:960px){.strata{height:300px}}
+.layer{position:absolute;left:0;right:0;display:flex;align-items:center;padding:0 16px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(11,14,13,.72);font-weight:600}
+.l1{top:0;height:16%;background:#3C4A2C}
+.l2{top:16%;height:22%;background:var(--olive)}
+.l3{top:38%;height:20%;background:var(--ochre)}
+.l4{top:58%;height:18%;background:var(--rust)}
+.l5{top:76%;height:24%;background:#5A5F5C;color:rgba(233,230,223,.8)}
+.watermark{position:absolute;left:0;right:0;top:58%;border-top:2px dashed var(--pipe)}
+.watermark span{position:absolute;right:8px;top:-22px;font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;color:var(--pipe);background:var(--void);padding:2px 6px}
+
+/* stats strip */
+.strip{background:var(--pipe)}
+.strip .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+@media(max-width:820px){.strip .wrap{grid-template-columns:1fr 1fr}}
+.strip div{background:transparent;border-right:1px solid rgba(11,14,13,.22);padding:26px 22px}
+.strip div:last-child{border-right:0}
+.strip b{display:block;font-family:var(--disp);font-size:2rem;color:#141414;line-height:1}
+.strip span{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(11,14,13,.72);display:block;margin-top:8px}
+
+/* dossier sections */
+.sec{padding:88px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:120px 1fr;gap:30px;align-items:start}
+@media(max-width:760px){.sec-head{grid-template-columns:1fr;gap:12px}}
+.sec-no{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;color:var(--gray);padding-top:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:34px}
+@media(max-width:860px){.two{grid-template-columns:1fr;gap:30px}}
+.body-copy{color:var(--bone-dim)}
+.body-copy strong{color:var(--bone);font-weight:600}
+
+/* code-table */
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:14px}
+.tbl th{text-align:left;font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gray);border-bottom:1px solid var(--line);padding:0 0 10px}
+.tbl td{border-bottom:1px solid var(--line);padding:14px 0;vertical-align:top}
+.tbl td:first-child{font-family:var(--mono);color:var(--pipe);width:34%;padding-right:20px;font-size:.84rem}
+
+/* services grid */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:36px}
+@media(max-width:860px){.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc{grid-template-columns:1fr}}
+.svc a{background:var(--void);padding:30px 24px 32px;text-decoration:none;display:block;text-align:center;transition:background .2s}
+.svc a:hover{background:var(--slate-2)}
+.svc svg{width:46px;height:46px;stroke:var(--pipe);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 14px;display:block}
+.svc h3{margin:0 0 8px;color:var(--bone)}
+.svc p{margin:0;font-size:.86rem;color:var(--bone-dim)}
+
+/* diagram */
+.diagram figure{margin:0}
+.diagram img{border:1px solid var(--line);filter:saturate(.72) contrast(1.04)}
+.diagram figcaption{font-family:var(--mono);font-size:.7rem;color:var(--gray);letter-spacing:.06em;margin-top:12px}
+
+.built{border-bottom:1px solid var(--line)}
+.built .sec-head{padding-bottom:78px!important}
+.built-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;padding-bottom:78px}
+@media(max-width:860px){.built-grid{grid-template-columns:1fr}}
+.built-grid figure{margin:0;position:relative;background:var(--slate);border:1px solid var(--line)}
+.built-grid img{width:100%;height:240px;object-fit:cover;display:block;transition:transform .5s ease}
+.built-grid figure:hover img{transform:scale(1.04)}
+.btag{position:absolute;top:0;left:0;z-index:2;background:var(--pipe);color:#141414;font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px}
+.built-grid figcaption{padding:14px 16px 16px}
+.built-grid figcaption b{display:block;color:var(--bone);font-size:.98rem}
+.built-grid figcaption span{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray)}
+/* map */
+.map-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;margin-top:34px}
+@media(max-width:860px){.map-grid{grid-template-columns:1fr}}
+.map-grid img{border:1px solid var(--line);filter:grayscale(.35) contrast(1.05)}
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;font-family:var(--mono);font-size:.74rem}
+.towns span{border:1px solid var(--line);padding:6px 12px;color:var(--bone-dim)}
+.note{border-left:2px solid var(--pipe);padding:4px 0 4px 20px;margin-top:26px}
+.note h3{color:var(--pipe);margin-bottom:8px}
+.note p{font-size:.92rem;color:var(--bone-dim);margin:0}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;list-style:none;font-family:var(--sans);font-weight:600;font-size:1.02rem;display:flex;justify-content:space-between;gap:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"[+]";font-family:var(--mono);color:var(--pipe);font-size:.8rem}
+details[open] summary::after{content:"[-]"}
+details p{margin:12px 0 0;color:var(--bone-dim);font-size:.94rem;max-width:74ch}
+
+.brail{margin:12px 0 0;padding-top:11px;border-top:1px solid var(--line)}
+.brail b{display:block;font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);margin-bottom:8px}
+.brail ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.brail li{margin:0}
+.brail a{display:inline-block;font-family:var(--mono);font-size:.72rem;color:var(--bone);text-decoration:none;background:var(--void);border:1px solid var(--line);padding:6px 10px;transition:background .18s,border-color .18s,color .18s}
+.brail a:hover,.brail a:focus-visible{background:var(--pipe);border-color:var(--pipe);color:var(--void);outline:none}
+.bfin{margin:18px 0 0;padding:14px 16px;background:var(--void);border-left:3px solid var(--pipe);font-size:.86rem;color:var(--gray);line-height:1.6}
+.bfin a{color:var(--pipe);font-weight:600;text-decoration:none;border-bottom:1px solid var(--pipe)}
+.bfin a:hover{color:var(--bone);border-color:var(--bone)}
+.bform{background:var(--void);border:1px solid var(--line);border-top:3px solid var(--pipe);padding:26px 24px 28px}
+.bform .frow{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:11px}
+@media(max-width:560px){.bform .frow{grid-template-columns:1fr}}
+.bform label{display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);margin-bottom:6px}
+.bform input,.bform select{width:100%;background:var(--slate);border:1px solid var(--line);color:var(--bone);font-family:var(--sans);font-size:.9rem;padding:11px 13px;box-sizing:border-box}
+.bform input:focus,.bform select:focus{outline:none;border-color:var(--pipe)}
+.bform button{width:100%;margin-top:8px;cursor:pointer;border:0;font-family:var(--mono);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;padding:15px 18px}
+.bform .req{color:var(--pipe)}
+.bform .fnote{margin:11px 0 0;font-size:.7rem;color:var(--gray);line-height:1.5}
+.bform .fnote a{color:var(--pipe);text-decoration:none;font-weight:600}
+.bform .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.close{padding:96px 0;background:var(--slate);border-bottom:1px solid var(--line)}
+.close .wrap{display:grid;grid-template-columns:1fr minmax(300px,400px);gap:44px;align-items:start}
+@media(max-width:820px){.close .wrap{grid-template-columns:1fr}}
+.close h2 span{color:var(--pipe)}
+.tel{font-family:var(--disp);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--pipe);text-decoration:none;display:block;margin-top:12px}
+footer{padding:52px 0 0;font-family:var(--mono);font-size:.76rem;color:var(--gray);border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1.2fr .8fr 1fr;gap:44px;padding-bottom:34px}
+@media(max-width:820px){.foot-grid{grid-template-columns:1fr;gap:26px}}
+.foot-brand{font-family:var(--disp);font-size:1rem;color:var(--bone);display:block;margin-bottom:10px;letter-spacing:.02em}
+.foot-head{letter-spacing:.2em;color:var(--pipe);display:block;margin-bottom:10px}
+footer p{margin:0 0 10px;line-height:1.7}
+.foot-tel{font-family:var(--disp);font-size:1.2rem;color:var(--pipe);text-decoration:none}
+.foot-links{display:grid;gap:7px}
+.foot-links a{text-decoration:none;color:var(--bone-dim)}
+.foot-links a:hover{color:var(--pipe)}
+.foot-base{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px;padding-bottom:20px}
+.tag{position:fixed;left:14px;bottom:14px;z-index:60;background:var(--pipe);color:var(--void);font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:9px 15px;text-decoration:none;font-weight:600}
+
+/* motion: the strata diagram assembles itself, then the water table line draws */
+@media (prefers-reduced-motion: no-preference){
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes growY{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes drawX{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .wrap>div:first-child>*{animation:fadeUp .7s ease both}
+.hero .wrap>div:first-child>*:nth-child(1){animation-delay:.05s}
+.hero .wrap>div:first-child>*:nth-child(2){animation-delay:.16s}
+.hero .wrap>div:first-child>*:nth-child(3){animation-delay:.3s}
+.hero .wrap>div:first-child>*:nth-child(4){animation-delay:.44s}
+.hero .wrap>div:first-child>*:nth-child(5){animation-delay:.58s}
+.layer{transform-origin:top;animation:growY .5s ease both}
+.l1{animation-delay:.55s}.l2{animation-delay:.7s}.l3{animation-delay:.85s}.l4{animation-delay:1s}.l5{animation-delay:1.15s}
+.watermark{transform:scaleX(0);transform-origin:left;animation:drawX .7s ease 1.4s forwards}
+.watermark span{opacity:0;animation:fadeUp .45s ease 1.95s both}
+html.js .rv{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
+html.js .rv.inview{opacity:1;transform:none}
+.strip div:nth-child(2).inview{transition-delay:.07s}
+.strip div:nth-child(3).inview{transition-delay:.14s}
+.strip div:nth-child(4).inview{transition-delay:.21s}
+.strip div:nth-child(5).inview{transition-delay:.28s}
+}
+
+/* field record plate + interactivity */
+.plate{border-bottom:1px solid var(--line)}
+.plate figure{margin:0;position:relative;overflow:hidden}
+.plate img{width:100%;height:56vh;min-height:340px;object-fit:cover;display:block;filter:saturate(.8) contrast(1.04)}
+.plate figcaption{position:absolute;left:0;right:0;bottom:0;background:rgba(11,14,13,.85);border-top:1px solid var(--line);font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);padding:12px 26px}
+.plate figcaption b{color:var(--pipe);font-weight:600}
+.strata .layer{transition:filter .25s ease,opacity .25s ease}
+.strata:hover .layer{opacity:.5}
+.strata .layer:hover{opacity:1;filter:brightness(1.2)}
+@media (prefers-reduced-motion: no-preference){
+@keyframes kenburns{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero-bg img{animation:kenburns 8s ease-out both}
+html.js .wipe{clip-path:inset(0 100% 0 0)}
+html.js .wipe.inview{clip-path:inset(0 0 0 0);transition:clip-path 1s cubic-bezier(.7,0,.3,1)}
+}
+
+/* fieldnote */
+.fieldnote{border-bottom:1px solid var(--line);background:var(--slate)}
+.fieldnote .wrap{padding:30px 26px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start}
+@media(max-width:760px){.fieldnote .wrap{grid-template-columns:1fr;gap:10px}}
+.fn-tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;color:var(--pipe);white-space:nowrap;padding-top:4px}
+.fieldnote p{margin:0;max-width:90ch;color:var(--bone-dim);font-size:.98rem}
+.fieldnote strong{color:var(--bone)}
+/* coverage map */
+.bmap-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:30px;align-items:start}
+@media(max-width:920px){.bmap-grid{grid-template-columns:1fr}}
+.bmap{position:relative;border:1px solid var(--line);background:var(--slate)}
+.bmap iframe{width:100%;height:540px;display:block;border:0;filter:saturate(.85) contrast(1.05)}
+@media(max-width:920px){.bmap iframe{height:360px}}
+.bmap-tag{position:absolute;top:0;left:0;z-index:2;background:var(--pipe);color:#141414;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;padding:8px 12px}
+@media (prefers-reduced-motion: no-preference){
+html.js .bmap.wipe{clip-path:inset(0 100% 0 0)}
+html.js .bmap.wipe.inview{clip-path:inset(0);transition:clip-path 1s cubic-bezier(.7,0,.2,1)}
+}
+.brows{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.brow{background:var(--void);padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;transition:background .2s}
+.brow:hover{background:var(--slate-2)}
+.brow b{font-family:var(--mono);font-size:.66rem;color:var(--pipe);letter-spacing:.12em;padding-top:3px}
+.brow h3{margin:0 0 4px;color:var(--bone);font-size:.92rem}
+.brow h3 a{color:inherit;text-decoration:none;border-bottom:2px solid var(--pipe)}
+.brow h3 a:hover{color:var(--pipe)}
+.brow p{margin:0;font-size:.82rem;color:var(--bone-dim)}
+.ballareas{display:inline-block;background:var(--void);padding:14px 16px;font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;color:var(--pipe);text-decoration:none}
+.ballareas:hover{background:var(--slate-2)}
+@media (prefers-reduced-motion: no-preference){
+html.js .brow.rv{opacity:0;transform:translateX(-14px)}
+html.js .brow.rv.inview{opacity:1;transform:none;transition:opacity .45s ease,transform .45s ease}
+html.js .brow.rv.inview:nth-child(2){transition-delay:.07s}
+html.js .brow.rv.inview:nth-child(3){transition-delay:.14s}
+html.js .brow.rv.inview:nth-child(4){transition-delay:.21s}
+html.js .brow.rv.inview:nth-child(5){transition-delay:.28s}
+html.js .brow.rv.inview:nth-child(6){transition-delay:.35s}
+html.js .brow.rv.inview:nth-child(7){transition-delay:.42s}
+html.js .brow.rv.inview:nth-child(8){transition-delay:.49s}
+}
+/* reviews */
+.recg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:26px 0 18px}
+@media(max-width:920px){.recg{grid-template-columns:1fr}}
+.recg figure{margin:0;background:var(--void);padding:24px 22px;position:relative;display:flex;flex-direction:column}
+.rtag{display:inline-block;align-self:flex-start;background:var(--pipe);color:#141414;font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;padding:5px 9px;margin-bottom:14px}
+.recg blockquote{margin:0 0 16px;font-size:.88rem;color:var(--bone-dim);flex:1}
+.recg figcaption{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;color:var(--gray)}
+/* map band */
+.mapband{position:relative;border-top:3px solid var(--pipe);background:var(--slate)}
+.mapband iframe{width:100%;height:320px;display:block;border:0;filter:grayscale(.25) contrast(1.03)}
+.maplink{position:absolute;top:14px;left:14px;z-index:2;background:var(--void);color:var(--bone);font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-decoration:none;padding:10px 14px;border:1px solid var(--line)}
+.maplink:hover{color:var(--pipe);border-color:var(--pipe)}
+
+.hero-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%;filter:saturate(.8) contrast(1.08) brightness(.9)}
+@media (prefers-reduced-motion: reduce){.hero-vid{display:none}}
+
+/* wow pass: progress bar + cta sheen */
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:99;pointer-events:none}
+.scroll-progress i{display:block;height:100%;background:var(--pipe);transform-origin:0 50%;transform:scaleX(0)}
+@media (prefers-reduced-motion: no-preference){
+.btn-solid{position:relative;overflow:hidden}
+.btn-solid::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.34),transparent);transform:skewX(-18deg);animation:ctasheen 3.6s ease-in-out infinite}
+@keyframes ctasheen{0%{left:-60%}55%{left:120%}100%{left:120%}}
+}
+
+/* upgrade suite (B voice) */
+.ndrop{position:relative}
+.ncaret{font-style:normal;font-size:.68em;color:var(--pipe)}
+.npanel{position:absolute;top:100%;left:-16px;min-width:236px;background:var(--slate);border:1px solid var(--line);border-top:2px solid var(--pipe);padding:6px 0;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease,visibility .22s;z-index:60;box-shadow:0 18px 34px -16px rgba(0,0,0,.7)}
+.ndrop:hover .npanel,.ndrop:focus-within .npanel{opacity:1;visibility:visible;transform:none}
+.nav nav .npanel a{display:block;padding:10px 16px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--bone-dim)}
+.nav nav .npanel a:hover{color:var(--pipe);background:rgba(249,115,22,.06)}
+.intro{display:none}
+@media (prefers-reduced-motion: no-preference){
+html.js .intro{display:block;position:fixed;inset:0;z-index:200;pointer-events:none}
+html.js .ip{position:absolute;left:0;right:0;height:50.5%;background:var(--slate)}
+html.js .ip-t{top:0;border-bottom:1px solid var(--line);animation:ipt .6s cubic-bezier(.7,0,.2,1) .8s forwards}
+html.js .ip-b{bottom:0;border-top:1px solid var(--line);animation:ipb .6s cubic-bezier(.7,0,.2,1) .8s forwards}
+@keyframes ipt{to{transform:translateY(-101%)}}
+@keyframes ipb{to{transform:translateY(101%)}}
+html.js .intro-mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;animation:imark .35s ease .75s forwards}
+@keyframes imark{to{opacity:0}}
+html.js .intro-mark span{font-family:var(--disp);font-size:clamp(1.1rem,2.4vw,1.7rem);letter-spacing:.2em;text-transform:uppercase;color:var(--bone);display:block}
+html.js .intro-mark em{display:block;font-style:normal;font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;color:var(--gray);margin:10px 0 12px}
+html.js .intro-mark i{display:block;height:3px;background:var(--pipe);transform:scaleX(0);transform-origin:0 50%;animation:irule .5s cubic-bezier(.7,0,.2,1) .12s forwards}
+@keyframes irule{to{transform:scaleX(1)}}
+}
+section h2{position:relative;padding-bottom:14px}
+section h2::after{content:"";position:absolute;left:0;bottom:0;width:64px;height:3px;background:var(--pipe)}
+.close h2::after{display:none}
+@media (prefers-reduced-motion: no-preference){
+html.js section h2::after{transform:scaleX(0);transform-origin:0 50%;transition:transform .8s cubic-bezier(.7,0,.2,1) .25s}
+html.js section h2.inview::after{transform:scaleX(1)}
+}
+.svc-cell{background:var(--void);padding:30px 24px 26px;text-align:center;transition:background .2s;cursor:pointer}
+.svc-cell:hover{background:var(--slate-2)}
+.svc-cell svg{width:46px;height:46px;stroke:var(--pipe);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 14px;display:block}
+.svc-cell h3{margin:0 0 8px;color:var(--bone)}
+.svc-cell p{margin:0 0 12px;font-size:.86rem;color:var(--bone-dim)}
+.bdet{text-align:left;border:1px solid var(--line);background:var(--slate);margin-bottom:12px}
+.bdet summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--pipe);padding:10px 12px;display:flex;justify-content:space-between;align-items:center}
+.bdet summary::-webkit-details-marker{display:none}
+.bdet summary::marker{content:""}
+.bdet .plus{font-family:var(--sans);font-size:1.1rem;transition:transform .3s ease}
+.bdet[open] .plus{transform:rotate(45deg)}
+.bdetail{max-height:300px;overflow-y:auto;padding:0 12px 12px;border-top:1px solid var(--line);max-height:240px;overflow-y:auto}
+.bdetail p{font-size:.82rem;color:var(--bone-dim);margin:10px 0 0;text-align:left}
+.bdetail ul{margin:8px 0 0;padding-left:16px;text-align:left;display:grid;gap:4px}
+.bdetail li{font-size:.8rem;color:var(--bone-dim)}
+.bdetail li::marker{color:var(--pipe)}
+@media (prefers-reduced-motion: no-preference){
+.bdet[open] .bdetail{animation:sdropb .35s ease}
+@keyframes sdropb{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+}
+.bopen{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--pipe);text-decoration:none}
+.bopen:hover{text-decoration:underline}
+.rjob{margin:8px 0 0!important;font-family:var(--mono);font-size:.64rem!important;letter-spacing:.08em;color:var(--pipe)!important}
+.rjob::before{content:"\25B8";margin-right:7px}
+.brow.town{cursor:pointer}
+.brow.town.town-on{background:rgba(249,115,22,.1);outline:1px solid var(--pipe)}
+.brow.town.town-on h3{color:var(--pipe)}
+.brow.town:focus-visible{outline:2px solid var(--pipe);outline-offset:2px}
+.brate{display:flex;align-items:center;gap:18px;margin:20px 0 6px}
+.brate b{font-family:var(--disp);font-size:clamp(2.2rem,4.4vw,3.4rem);line-height:1;color:var(--pipe)}
+.brate .star-row{display:flex;gap:5px;color:var(--pipe)}
+.brate-sub{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;color:var(--gray)}
+@media (prefers-reduced-motion: no-preference){
+html.js .brate .star-row span{opacity:0;transform:scale(.3)}
+html.js .brate.inview .star-row span{animation:starpop .45s cubic-bezier(.2,.9,.3,1.6) forwards}
+html.js .brate.inview .star-row span:nth-child(2){animation-delay:.12s}
+html.js .brate.inview .star-row span:nth-child(3){animation-delay:.24s}
+html.js .brate.inview .star-row span:nth-child(4){animation-delay:.36s}
+html.js .brate.inview .star-row span:nth-child(5){animation-delay:.48s}
+@keyframes starpop{to{opacity:1;transform:scale(1)}}
+}
+.rev-ticker{margin:22px 0 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;background:var(--slate)}
+.rt-track{display:inline-block;padding:12px 0}
+.rt-track em{font-style:normal;font-size:.84rem;color:var(--bone-dim)}
+.rt-track b{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--gray);margin-left:10px}
+.rt-track i{font-style:normal;color:var(--pipe);margin:0 20px}
+@media (prefers-reduced-motion: no-preference){
+.rt-track{animation:btick 44s linear infinite}
+@keyframes btick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.rev-ticker:hover .rt-track{animation-play-state:paused}
+}
+.sec-head > div{min-width:0}
+.bgrid{background-image:linear-gradient(rgba(249,115,22,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(249,115,22,.05) 1px,transparent 1px);background-size:44px 44px}
+
+/* ---- live-site edge widgets (RealWork Labs tab + pojo-a11y toolbar) ---- */
+.edgetab{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:900;
+  background:var(--pipe);color:var(--void);text-decoration:none;
+  writing-mode:vertical-rl;text-orientation:mixed;
+  font-size:.74rem;font-weight:800;letter-spacing:.1em;
+  padding:20px 11px;border:0;cursor:pointer;
+  box-shadow:2px 0 14px rgba(0,0,0,.32);
+  transition:padding .18s ease,filter .18s ease}
+.edgetab:hover,.edgetab:focus-visible{padding-left:16px;padding-right:16px;filter:brightness(1.08);outline:none}
+.a11ybtn{position:fixed;right:0;top:74px;z-index:901;
+  width:44px;height:44px;display:grid;place-items:center;
+  background:var(--pipe);color:var(--void);border:0;border-radius:3px 0 0 3px;
+  box-shadow:-2px 2px 12px rgba(0,0,0,.3)}
+.a11ybtn svg{width:24px;height:24px;fill:currentColor}
+@media(max-width:700px){
+  .edgetab{font-size:.66rem;padding:15px 8px}
+  .a11ybtn{width:38px;height:38px;top:64px}
+  .a11ybtn svg{width:20px;height:20px}
+}
+@media print{.edgetab,.a11ybtn{display:none}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Excavating New Jersey LLC",
+  "url": "https://excavatingnj.com/",
+  "telephone": "+19737020655",
+  "address": {"@type": "PostalAddress", "streetAddress": "406 County Rd 565", "addressLocality": "Wantage", "addressRegion": "NJ", "postalCode": "07461", "addressCountry": "US"},
+  "description": "Owner-operated excavation and septic contractor serving Sussex and northern Morris County, New Jersey. Septic design, permitting and installation under NJDEP Chapter 199 (N.J.A.C. 7:9A), plus land clearing, drainage, sewer work and site excavation.",
+  "areaServed": ["Wantage NJ","Sparta NJ","Newton NJ","Vernon NJ","Andover NJ","Frankford NJ","Hopatcong NJ","Jefferson NJ","Kinnelon NJ","Rockaway Township NJ","Mount Olive NJ","Budd Lake NJ","Sussex County NJ","Morris County NJ"],
+  "founder": {"@type": "Person", "name": "Mike White"},
+  "email": "excavatingnj@gmail.com",
+  "geo": {"@type": "GeoCoordinates", "latitude": 41.178584, "longitude": -74.661811},
+  "hasMap": "https://www.google.com/maps/place/Excavating+New+Jersey+LLC/@41.178584,-74.661811,2654m/data=!3m1!1e3!4m6!3m5!1s0x89c34196557abf97:0x8496b0714be38db4!8m2!3d41.178584!4d-74.661811!16s%2Fg%2F1tcw4kh5",
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "16:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
+  ],
+  "sameAs": ["https://instagram.com/excavatingnj","https://linkedin.com/in/mikewhiteexcavatingnj"]
+}
+</script>
+<!-- PRODUCTION NOTE: if Yoast/RankMath or another plugin already emits FAQPage schema, remove this block before publishing to avoid duplicate markup. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Why can you not quote a septic system over the phone?","acceptedAnswer":{"@type":"Answer","text":"Because the soil decides the design and the design decides the price. Anyone who gives you a firm figure before seeing the soil log is either guessing or planning to revise it later."}},
+    {"@type":"Question","name":"What is N.J.A.C. 7:9A?","acceptedAnswer":{"@type":"Answer","text":"It is the New Jersey standard governing individual subsurface sewage disposal systems, also known as NJDEP Chapter 199. It sets how soil is tested, how systems are sized and what separations are required."}},
+    {"@type":"Question","name":"My septic failed a sale inspection. What now?","acceptedAnswer":{"@type":"Answer","text":"Start with a free site evaluation so you know whether it is a repair or a replacement, and how long the health department will take. Both answers change how you handle the sale."}},
+    {"@type":"Question","name":"Can a repair work instead of a full replacement?","acceptedAnswer":{"@type":"Answer","text":"Sometimes, and we will tell you when that is the case. A camera inspection and a look at the field often settle it quickly."}},
+    {"@type":"Question","name":"Do you handle permits and inspections?","acceptedAnswer":{"@type":"Answer","text":"Yes. Soil logs, perc tests, design, TWA permits, health department approval and final sign-off under NJDEP Chapter 199."}},
+    {"@type":"Question","name":"My property is solid rock. Can you still do it?","acceptedAnswer":{"@type":"Answer","text":"Yes. We own heavy-duty hydraulic breakers for exactly this ground, from Smoke Rise granite to the iron-heavy rock around Rockaway Township. Rock changes the plan and the price, and the written estimate spells that out before we start."}},
+    {"@type":"Question","name":"Do you offer green or advanced treatment septic systems?","acceptedAnswer":{"@type":"Answer","text":"Yes. We install advanced treatment systems, including Singulair Green units, where lots are tight or environmentally sensitive."}},
+    {"@type":"Question","name":"Do you handle commercial projects?","acceptedAnswer":{"@type":"Answer","text":"Yes. We build commercial septic and site work across Sussex and northern Morris County, from Route 23 businesses to larger developments, with engineering and TWA permitting handled in house."}}
+  ]
+}
+</script>
+</head>
+<body>
+<!-- LIVE-SITE EDGE WIDGETS, rendered so this mockup matches the real page.
+     1. "See work near you" is the RealWork Labs recent-projects widget. It is a
+        third-party React widget (styled-components) already installed on
+        excavatingnj.com, media is one-time-signed so it cannot be rebuilt by us.
+        Here it is a styled stand-in linking to the real /recent-projects/ page.
+        OPEN QUESTION FROM THE HANDOFF, still unanswered: who is the vendor, who
+        pays for it, and is it under contract.
+     2. The accessibility toggle is One Click Accessibility (pojo-a11y), a free
+        WordPress plugin already on the site. This is a VISUAL stand-in only,
+        aria-hidden and tabindex -1, so it never promises function it does not
+        have in the mockup. The plugin supplies the real toolbar once live.
+     BOTH SURVIVE A REDESIGN IN PLACE. Neither is ours to remove without asking. -->
+<a class="edgetab" href="https://excavatingnj.com/recent-projects/">See work near you</a>
+<div class="a11ybtn" aria-hidden="true" tabindex="-1" title="Accessibility toolbar (One Click Accessibility plugin)">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="3.6" r="2"/><path d="M20.4 7.1c-.2-.7-.9-1.1-1.6-.9l-4 1.1a9.6 9.6 0 0 1-5.6 0l-4-1.1c-.7-.2-1.4.2-1.6.9-.2.7.2 1.4.9 1.6l4 1.1v3.1l-2 6.5c-.2.7.2 1.4.9 1.6.7.2 1.4-.2 1.6-.9L11 14h2l1.9 6.1c.2.7.9 1.1 1.6.9.7-.2 1.1-.9.9-1.6l-2-6.5V9.8l4-1.1c.7-.2 1.1-.9.9-1.6z"/></svg>
+</div>
+
+<div class="intro" aria-hidden="true">
+  <div class="ip ip-t"></div><div class="ip ip-b"></div>
+  <div class="intro-mark"><span>Excavating New Jersey</span><em>FIELD DOSSIER / SUSSEX + MORRIS NJ</em><i></i></div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <img loading="lazy" src="../assets/2212e4c2d4cd.png" alt="Excavating New Jersey LLC">
+    <nav>
+      <div class="ndrop">
+        <a href="https://excavatingnj.com/services/">Services <i class="ncaret" aria-hidden="true">&#9662;</i></a>
+        <div class="npanel">
+          <a href="https://excavatingnj.com/services/septic/">Septic Services</a>
+          <a href="https://excavatingnj.com/services/septic/installation/">Septic Installation</a>
+          <a href="https://excavatingnj.com/services/septic/repairs/">Septic Repairs</a>
+          <a href="https://excavatingnj.com/services/engineering-and-design/">Engineering &amp; Design</a>
+          <a href="https://excavatingnj.com/services/excavation/">Excavation &amp; Site Work</a>
+          <a href="https://excavatingnj.com/services/sewer/">Sewer Services</a>
+        </div>
+      </div>
+      <div class="ndrop">
+        <a href="https://excavatingnj.com/areas-we-serve/">Areas We Serve <i class="ncaret" aria-hidden="true">&#9662;</i></a>
+        <div class="npanel">
+          <a href="https://excavatingnj.com/areas-we-serve/sussex-county/">Sussex County</a>
+          <a href="https://excavatingnj.com/areas-we-serve/sussex-county/sparta/">Sparta</a>
+          <a href="https://excavatingnj.com/areas-we-serve/sussex-county/newton/">Newton</a>
+          <a href="https://excavatingnj.com/areas-we-serve/sussex-county/vernon/">Vernon</a>
+          <a href="https://excavatingnj.com/areas-we-serve/sussex-county/hopatcong/">Hopatcong</a>
+          <a href="https://excavatingnj.com/areas-we-serve/morris-county/">Morris County</a>
+        </div>
+      </div>
+      <a href="https://excavatingnj.com/about/">About</a>
+      <a href="https://excavatingnj.com/contact/">Contact</a>
+      <a href="https://excavatingnj.com/recent-projects/">Recent Projects</a>
+    </nav>
+    <a class="call" href="tel:+19737020655">(973) 702-0655</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"><img loading="lazy" src="../assets/9a9024c36e7b.jpg" alt="Excavator loading a dump truck on a New Jersey site"><video class="hero-vid" autoplay muted loop playsinline preload="auto" aria-hidden="true"><source src="../assets/5e803d4ef7ab.mp4" type="video/mp4"></video></div>
+  <div class="wrap">
+    <div>
+      <span class="label">Septic System Design &amp; Installation / Sussex &amp; Morris County NJ</span>
+      <h1 class="display-h">A septic system<br>is only as good<span>as the ground</span></h1>
+      <p class="lede">Northwest New Jersey sits on shallow bedrock, glacial till and a water table that moves with the season. A septic system specified from a desk fails here. We design from the soil log up.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#contact">Request a site evaluation</a>
+        <a class="btn" href="#ground">Read the ground first</a>
+      </div>
+      <div class="spec">
+        <div>DESIGN STANDARD &nbsp;/&nbsp; <b>N.J.A.C. 7:9A</b></div>
+        <div>BASE &nbsp;/&nbsp; <b>406 County Rd 565, Wantage NJ 07461</b></div>
+        <div>OPERATING &nbsp;/&nbsp; <b>Nearly 20 years, owner operated</b></div>
+      </div>
+    </div>
+    <div class="strata" aria-hidden="true">
+      <div class="layer l1">Topsoil</div>
+      <div class="layer l2">Subsoil / fill</div>
+      <div class="layer l3">Glacial till</div>
+      <div class="layer l4">Weathered rock</div>
+      <div class="layer l5">Bedrock</div>
+      <div class="watermark"><span>Seasonal high water table</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <div class="rv"><b>7:9A</b><span>The code every design answers to</span></div>
+    <div class="rv"><b data-count="2">0</b><span>Counties covered, Sussex and Morris</span></div>
+    <div class="rv"><b data-count="20">0</b><span>Years, nearly, owner operated</span></div>
+    <div class="rv"><b>NAWT</b><span>Certified septic inspector on staff</span></div>
+    <div class="rv"><b data-count="4.9">0.0</b><span>Google rating, 49 reviews on record</span></div>
+  </div>
+</section>
+
+<section class="fieldnote" aria-label="About Excavating New Jersey LLC">
+  <div class="wrap">
+    <span class="fn-tag">FIELD NOTE / WHO WE ARE</span>
+    <p><strong>Excavating New Jersey LLC</strong> is an owner-operated excavation and septic contractor based in Wantage, serving Sussex and northern Morris County for nearly 20 years. We design, permit and install septic systems to <strong>NJDEP Chapter 199 (N.J.A.C. 7:9A)</strong>, and handle land clearing, drainage, sewer work and site excavation on rocky, high-water-table ground.</p>
+  </div>
+</section>
+
+<section class="sec" id="ground">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">01 / THE GROUND</div>
+      <div>
+        <h2>Four things about this soil that decide your design</h2>
+        <div class="two">
+          <div class="body-copy">
+            <p><strong>Shallow bedrock.</strong> Across much of Sussex County there is rock closer to the surface than a standard drainfield depth allows. That is not a problem you find out about halfway through a dig, it is a problem you design around before you submit.</p>
+            <p><strong>Seasonal high water table.</strong> A lot that percolates fine in August can be saturated in April. New Jersey code measures for the wet season, not the convenient one.</p>
+          </div>
+          <div class="body-copy">
+            <p><strong>Glacial till.</strong> Mixed, unpredictable, and it changes across a single property. Two test pits eighty feet apart can call for two different systems.</p>
+            <p><strong>Slope and setbacks.</strong> Steep lots and lake-adjacent parcels near Lake Mohawk carry setback rules that quietly eliminate half the yard as a viable field location.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec diagram" id="code">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">02 / THE SEQUENCE</div>
+      <div>
+        <h2>How a permit actually clears</h2>
+        <div class="two" style="align-items:start">
+          <div>
+            <table class="tbl">
+              <tr><th>Stage</th><th>What happens</th></tr>
+              <tr><td>Site evaluation</td><td>We walk the property, locate the existing system, and read the grade. No charge.</td></tr>
+              <tr><td>Soil testing</td><td>Test pits and permeability, witnessed as the health department requires.</td></tr>
+              <tr><td>Design</td><td>System specified to the soil log and the lot, not to a template.</td></tr>
+              <tr><td>Submission</td><td>Filed with the township and county health department. We chase it, you do not.</td></tr>
+              <tr><td>Installation</td><td>Built by the same outfit that designed it.</td></tr>
+              <tr><td>Final inspection</td><td>Signed off and documented for your records, lender or buyer.</td></tr>
+            </table>
+          </div>
+          <figure>
+            <img loading="lazy" src="../assets/973348f6ac7f.jpg" alt="Illustrative cross-section of a residential septic system layout">
+            <figcaption>ILLUSTRATION / Typical residential layout: tank, distribution box and drainfield in sequence. Rendering, not a photograph of a specific job.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="built" id="built">
+  <div class="wrap">
+    <div class="sec-head" style="padding:78px 0 0">
+      <div class="sec-no">RECENT WORK</div>
+      <div>
+        <h2>Built to last</h2>
+        <div class="built-grid">
+          <figure class="wipe"><span class="btag">Septic install</span><img loading="lazy" src="../assets/e0d6c0f687bb.webp" alt="Septic tanks and risers set in a gravel bed"><figcaption><b>Tank and field set</b><span>Sussex County residential</span></figcaption></figure>
+          <figure class="wipe"><span class="btag">Site work</span><img loading="lazy" src="../assets/7deb9c0b8603.webp" alt="Finished retaining wall with regraded yard"><figcaption><b>Walled and graded</b><span>Ready for closing day</span></figcaption></figure>
+          <figure class="wipe"><span class="btag">Commercial</span><img loading="lazy" src="../assets/86e912440c99.webp" alt="Concrete seepage pits in open excavation"><figcaption><b>Engineered drywells</b><span>Open cut, lot restored</span></figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="svc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">03 / SCOPE</div>
+      <div>
+        <h2>What we are equipped for</h2>
+        <div class="svc">
+          <div class="svc-cell" data-href="https://excavatingnj.com/services/septic/installation/"><svg viewBox="0 0 48 48"><rect x="8" y="18" width="32" height="18" rx="4"/><line x1="16" y1="18" x2="16" y2="10"/><line x1="32" y1="18" x2="32" y2="10"/><rect x="13" y="7" width="6" height="3"/><rect x="29" y="7" width="6" height="3"/></svg><h3>Septic installation</h3><p>New systems designed from the soil log and set to grade.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>From failed inspections to aging systems, we handle septic installation, repair, and replacement from start to finish. If a malfunctioning septic system is holding up your home sale or threatening your property’s functionality, our licensed, insured, and certified septic installers respond quickly with reliable solutions. We offer “Pay at Closing” options and work with 203K loans to make the process easier during real estate transactions.</p><div class="brail"><b>Also in this line</b><ul><li><a href="https://excavatingnj.com/services/septic/singulair-green/">Singulair Green ATU</a></li></ul></div></div></details><a class="bopen" href="https://excavatingnj.com/services/septic/installation/">OPEN THE PAGE &rarr;</a></div>
+          <a href="https://excavatingnj.com/services/septic/repairs/"><svg viewBox="0 0 48 48"><path d="M30 12a8 8 0 1 0 6 13l6 6-5 5-6-6a8 8 0 0 1-1-18z"/><line x1="10" y1="38" x2="20" y2="28"/></svg><h3>Septic repairs</h3><p>Targeted fixes, Singulair Green service and water jetting.</p></a>
+          <div class="svc-cell" data-href="https://excavatingnj.com/services/engineering-and-design/"><svg viewBox="0 0 48 48"><path d="M24 6l4 4-16 16-6 2 2-6z"/><line x1="14" y1="34" x2="40" y2="34"/><line x1="20" y1="40" x2="40" y2="40"/></svg><h3>Engineering &amp; design</h3><p>Soil evaluation and township permitting under 7:9A.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>We handle the complete engineering process: soil logs, perc tests, and stamped engineering prints. Whether your property has a high water table, limited space, or has been called “unbuildable,” we specialize in raised mound systems and advanced treatment units (ATUs) that turn tough lots into viable building sites.</p><ul><li>Free site evaluations</li><li>Soil logs and perc tests</li><li>Stamped engineering plans (NJDEP Chapter 199 compliant)</li><li>Raised mound system design for high water tables</li><li>Advanced treatment unit (ATU) specifications for small lake lots</li></ul></div></details><a class="bopen" href="https://excavatingnj.com/services/engineering-and-design/">OPEN THE PAGE &rarr;</a></div>
+          <div class="svc-cell" data-href="https://excavatingnj.com/services/excavation/"><svg viewBox="0 0 48 48"><path d="M6 34h20l6-10h8"/><circle cx="14" cy="40" r="4"/><circle cx="34" cy="40" r="4"/><path d="M32 24V14l8 4"/></svg><h3>Excavation &amp; site work</h3><p>Drainage, driveways, retaining walls and land clearing.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>We grade to exact specifications for foundation excavation, so your contractor can start immediately. Rock removal, ledge blasting, and boulder retaining walls are standard work in Sussex County, and we have the equipment and nearly 20 years of experience to handle it without delays.</p><ul><li>Foundation excavation for basements, additions, and commercial footings</li><li>Rock removal: hydraulic hammering, ledge removal, boulder retaining walls</li><li>Utility trenching with proper compaction to prevent settling</li><li>Driveway and private road construction built to handle New Jersey winters</li><li>Land clearing: forestry mulching and stump removal with minimal soil disturbance</li></ul><div class="brail"><b>Site work pages</b><ul><li><a href="https://excavatingnj.com/services/excavation/drainage/">Drainage</a></li><li><a href="https://excavatingnj.com/services/excavation/driveway-installation/">Driveway installation</a></li><li><a href="https://excavatingnj.com/services/excavation/land-clearning/">Land clearing</a></li><li><a href="https://excavatingnj.com/services/excavation/retaining-walls/">Retaining walls</a></li></ul></div></div></details><a class="bopen" href="https://excavatingnj.com/services/excavation/">OPEN THE PAGE &rarr;</a></div>
+          <div class="svc-cell" data-href="https://excavatingnj.com/services/sewer/camera-inspection/"><svg viewBox="0 0 48 48"><rect x="10" y="14" width="22" height="16" rx="3"/><circle cx="21" cy="22" r="5"/><path d="M32 18l8-4v16l-8-4"/></svg><h3>Sewer camera</h3><p>Diagnosis on video before anyone starts digging.</p><details class="bdet" onclick="event.stopPropagation()"><summary>MORE / FROM THE SERVICE PAGE <b class="plus">+</b></summary><div class="bdetail"><p>Whether you’re tying into municipal systems or addressing sewer line failures, we trench, install, and connect sewer lines with the precision and attention to detail you’d expect from licensed, insured professionals.</p><ul><li>Municipal sewer connections and tie-ins</li><li>Sewer line installation and replacement</li><li>Sewer line repairs and full line replacement</li><li>Utility coordination and permit management</li><li>Proper trenching and compaction for long-term reliability</li></ul></div></details><a class="bopen" href="https://excavatingnj.com/services/sewer/camera-inspection/">OPEN THE PAGE &rarr;</a></div>
+          <a href="https://excavatingnj.com/services/septic/water-jetting/"><svg viewBox="0 0 48 48"><path d="M24 8c6 8 10 13 10 19a10 10 0 0 1-20 0c0-6 4-11 10-19z"/><path d="M20 28a5 5 0 0 0 4 5"/></svg><h3>High-pressure jetting</h3><p>Clearing lines and laterals without open excavation.</p></a>
+        </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="area">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">04 / COVERAGE</div>
+      <div>
+        <h2>Two counties, known ground</h2>
+        <div class="bmap-grid">
+          <div class="bmap wipe">
+            <span class="bmap-tag">SAT VIEW / CLICK A ROW TO FLY THERE</span>
+            <iframe src="https://maps.google.com/maps?q=Excavating%20New%20Jersey%20LLC%2C%20406%20County%20Rd%20565%2C%20Wantage%2C%20NJ&ll=41.06%2C-74.62&t=k&z=10&output=embed" loading="lazy" title="Excavating New Jersey LLC service area across Sussex and northern Morris County" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="brows">
+            <div class="brow rv town" data-q="Lake Mohawk, Sparta, NJ" tabindex="0" role="button"><b>S-01</b><div><h3><a href="https://excavatingnj.com/areas-we-serve/sussex-county/sparta/">Sparta &amp; Lake Mohawk</a></h3><p>Steep grades, rock near the surface and lake setbacks. Designed for Sparta conditions from the first test pit.</p><p class="rjob">Recent job: septic replacement for a home sale, Oct 2025</p></div></div>
+            <div class="brow rv town" data-q="Vernon Township, NJ" tabindex="0" role="button"><b>S-02</b><div><h3><a href="https://excavatingnj.com/areas-we-serve/sussex-county/vernon/">Vernon &amp; Highland Lakes</a></h3><p>Equipment built for heavy glacial soil and rocky terrain.</p><p class="rjob">Recent job: full septic replacement with design, Oct 2025</p></div></div>
+            <div class="brow rv town" data-q="Newton, NJ" tabindex="0" role="button"><b>S-03</b><div><h3><a href="https://excavatingnj.com/areas-we-serve/sussex-county/newton/">Newton &amp; Andover</a></h3><p>Projects throughout the county seat and surrounding townships.</p></div></div>
+            <div class="brow rv town" data-q="Hopatcong, NJ" tabindex="0" role="button"><b>S-04</b><div><h3><a href="https://excavatingnj.com/areas-we-serve/sussex-county/hopatcong/">Hopatcong &amp; Byram</a></h3><p>Lake Hopatcong is the largest lake in New Jersey. Tight sloped lots close to the water table, where setbacks decide the design first.</p></div></div>
+            <!-- CITY PAGE BUILD-OUT: only Sparta, Vernon, Newton and Hopatcong have live pages
+                 (all 200, verified 2026-08-26). The rows below are deliberately unlinked because
+                 their pages 404. Build order in redesign/dimi-priority-lanes_2026-08-26.md.
+                 Wantage is the base of operations and still has no page, so it is first. -->
+            <div class="brow rv town" data-q="Wantage, NJ" tabindex="0" role="button"><b>S-05</b><div><h3>Wantage &amp; Frankford</h3><p>Home base. Every soil type, every seasonal drainage pattern, every local inspector.</p><p class="rjob">Recent job: septic repair and replacement, Aug 2024</p></div></div>
+            <div class="brow rv town" data-q="Oak Ridge, Jefferson Township, NJ" tabindex="0" role="button"><b>M-01</b><div><h3>Jefferson &amp; Oak Ridge</h3><p>The local choice for Lake Shawnee septic replacements on high-water-table lots.</p><p class="rjob">Recent job: septic system replacement, Oct 2025</p></div></div>
+            <div class="brow rv town" data-q="Smoke Rise, Kinnelon, NJ" tabindex="0" role="button"><b>M-02</b><div><h3>Kinnelon &amp; Butler</h3><p>Smoke Rise takes serious equipment and clean work under strict access rules.</p></div></div>
+            <div class="brow rv town" data-q="Rockaway Township, NJ" tabindex="0" role="button"><b>M-03</b><div><h3>Rockaway Township</h3><p>Green Pond Road to White Meadow Lake, iron-heavy soil that breaks lesser equipment.</p></div></div>
+            <div class="brow rv town" data-q="Budd Lake, NJ" tabindex="0" role="button"><b>M-04</b><div><h3>Mt. Olive &amp; Budd Lake</h3><p>Mound systems and curtain drains engineered for wet conditions near Budd Lake.</p></div></div>
+            <a class="ballareas" href="https://excavatingnj.com/areas-we-serve/">ALL AREAS WE SERVE &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="closing-date">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">05 / THE CLOSING DATE</div>
+      <div>
+        <h2>A failed septic inspection before closing is a solvable problem</h2>
+        <div class="two" style="align-items:start">
+          <div class="body-copy">
+            <p><strong>This is the call we take most often.</strong> The buyer's inspector flags the septic, the date is already on the contract, and every party in the sale is suddenly waiting on one repair.</p>
+            <p>The septic is rarely the hard part. The hard part is not knowing the number. So the number comes first, in writing, and it holds to your date.</p>
+            <a class="btn btn-solid" href="#contact">Get a number that holds to closing day</a>
+          </div>
+          <div>
+            <table class="tbl">
+              <tr><th>Money question</th><th>Answer</th></tr>
+              <tr><td>Site evaluation</td><td>Free. We walk the lot and tell you repair or replacement.</td></tr>
+              <tr><td>Written estimate</td><td>Free, itemised, built to hand to a lender or an attorney.</td></tr>
+              <tr><td>Pay at closing</td><td>Available in many home sales, settled from the proceeds.</td></tr>
+              <tr><td>203K loans</td><td>Documentation prepared to satisfy renovation-loan lenders.</td></tr>
+            </table>
+            <!-- BUILD DEPENDENCY (handoff priority 5): the 203K explainer linked below is drafted at
+                 landing-pages/fha-203k-septic-financing-nj/ but is NOT live yet (404 verified 2026-08-26).
+                 Publish it at /203k-septic-financing-new-jersey/ BEFORE this homepage goes live. -->
+            <p class="bfin">Not sure how to pay for it? Read our plain-English guide to <a href="https://excavatingnj.com/203k-septic-financing-new-jersey/">203K loans and pay-at-closing for a septic replacement</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="operator">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">06 / THE OPERATOR</div>
+      <div>
+        <h2>Owner operated, and it shows in the estimate</h2>
+        <div class="two">
+          <div class="body-copy"><p>That person is Mike White, the owner. He reads your soil log, and he is accountable for the number staying true. Nearly 20 years working this ground, with design, permitting and installation under one roof, so nothing is lost between a salesman and a crew.</p></div>
+          <div><div class="spec" style="margin-bottom:0">
+            <div>CREDENTIAL &nbsp;/&nbsp; <b>NAWT-certified septic inspector on staff</b></div>
+            <div>STANDING &nbsp;/&nbsp; <b>Licensed and insured in New Jersey</b></div>
+            <div>SCOPE &nbsp;/&nbsp; <b>Design, permits and build, one outfit</b></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec bgrid" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">07 / THE RECORD</div>
+      <div>
+        <h2>The record</h2>
+        <div class="brate rv"><b data-count="4.9">0.0</b><div class="star-row" aria-hidden="true"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div><span class="brate-sub">49 GOOGLE REVIEWS ON RECORD</span></div>
+        <div class="recg">
+          <figure class="rv"><span class="rtag">HOME SALE</span><blockquote>We had an offer on the house in December under the condition we replace the septic. Excavating New Jersey worked diligently through the holidays and multiple snow storms and sensitive neighbors and demanding inspectors from both the town and county to get the job done&hellip; A total pro. Highly recommend.</blockquote><figcaption>J. S. / LAKE MOHAWK</figcaption></figure>
+          <figure class="rv"><span class="rtag">FULL REPLACEMENT</span><blockquote>They handled everything. Engineering of the septic system, acquiring all the needed permits and inspections&hellip; Mike is also a true owner operator, he didn&rsquo;t just send a crew of guys to do the work he was in the machine right alongside his crew getting the job done.</blockquote><figcaption>F. S. / VERNON</figcaption></figure>
+          <figure class="rv"><span class="rtag">COMMERCIAL</span><blockquote>They were professional, efficient, and clearly knew what they were doing. The work was done on time and to a very high standard. The stone walls look amazing, and everything was handled with care and attention to detail.</blockquote><figcaption>Y. P. / 12 TANKS + STONE WALLS</figcaption></figure>
+        </div>
+        <div class="rev-ticker" aria-hidden="true">
+          <div class="rt-track">
+            <em>&ldquo;Top notch service&rdquo;</em><b>A. S.</b><i>&#9733;</i><em>&ldquo;A total pro. Highly recommend&rdquo;</em><b>J. S.</b><i>&#9733;</i><em>&ldquo;Great experience! They were prompt and honest&rdquo;</em><b>A. K.</b><i>&#9733;</i><em>&ldquo;MIKE is a professional&rdquo;</em><b>S. B.</b><i>&#9733;</i><em>&ldquo;Definitely a 5 star company for your septic needs&rdquo;</em><b>W. R.</b><i>&#9733;</i><em>&ldquo;Excellent contractor for septic installation&rdquo;</em><b>J. Y.</b><i>&#9733;</i><em>&ldquo;The entire process from start to finish was great&rdquo;</em><b>M. Z.</b><i>&#9733;</i><em>&ldquo;Great septic install&rdquo;</em><b>C. H.</b><i>&#9733;</i>
+            <em>&ldquo;Top notch service&rdquo;</em><b>A. S.</b><i>&#9733;</i><em>&ldquo;A total pro. Highly recommend&rdquo;</em><b>J. S.</b><i>&#9733;</i><em>&ldquo;Great experience! They were prompt and honest&rdquo;</em><b>A. K.</b><i>&#9733;</i><em>&ldquo;MIKE is a professional&rdquo;</em><b>S. B.</b><i>&#9733;</i><em>&ldquo;Definitely a 5 star company for your septic needs&rdquo;</em><b>W. R.</b><i>&#9733;</i><em>&ldquo;Excellent contractor for septic installation&rdquo;</em><b>J. Y.</b><i>&#9733;</i><em>&ldquo;The entire process from start to finish was great&rdquo;</em><b>M. Z.</b><i>&#9733;</i><em>&ldquo;Great septic install&rdquo;</em><b>C. H.</b><i>&#9733;</i>
+          </div>
+        </div>
+        <a class="ballareas" href="https://excavatingnj.com/recent-projects/">READ MORE ON OUR RECENT PROJECTS PAGE &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">08 / ANSWERS</div>
+      <div>
+        <h2>Asked and answered</h2>
+        <div style="margin-top:26px">
+          <details open><summary>Why can you not quote a septic system over the phone?</summary><p>Because the soil decides the design and the design decides the price. Anyone who gives you a firm figure before seeing the soil log is either guessing or planning to revise it later.</p></details>
+          <details><summary>What is N.J.A.C. 7:9A?</summary><p>It is the New Jersey standard governing individual subsurface sewage disposal systems. It sets how soil is tested, how systems are sized and what separations are required. Every design we submit answers to it.</p></details>
+          <details><summary>My septic failed a sale inspection. What now?</summary><p>Start with a site evaluation so you know whether it is a repair or a replacement, and how long the health department will take. Both answers are free, and both change how you handle the sale.</p></details>
+          <details><summary>Can a repair work instead of a full replacement?</summary><p>Sometimes, and we will tell you when that is the case. A camera inspection and a look at the field often settle it quickly.</p></details>
+          <details><summary>Do you handle permits and inspections?</summary><p>Yes. Soil logs, perc tests, design, TWA permits, health department approval and final sign-off under NJDEP Chapter 199.</p></details>
+          <details><summary>My property is solid rock. Can you still do it?</summary><p>Yes. We own heavy-duty hydraulic breakers for exactly this ground, from Smoke Rise granite to the iron-heavy rock around Rockaway Township. Rock changes the plan and the price, and the written estimate spells that out before we start.</p></details>
+          <details><summary>Do you offer green or advanced treatment septic systems?</summary><p>Yes. We install advanced treatment systems, including Singulair Green units, where lots are tight or environmentally sensitive.</p></details>
+          <details><summary>Do you handle commercial projects?</summary><p>Yes. We build commercial septic and site work across Sussex and northern Morris County, from Route 23 businesses to larger developments, with engineering and TWA permitting handled in house.</p></details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="close" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="label">Next step</span>
+      <h2 style="margin-top:14px">Send us the address.<br><span>We will read the ground</span></h2>
+      <p class="body-copy" style="max-width:52ch;margin-top:16px">A site evaluation and a written estimate cost nothing. What they buy you is a number you can plan around.</p>
+    </div>
+    <!-- FORM BUILD NOTE (handoff priority 6): five fields on purpose, cut down from the four
+         multi-field Gravity Forms on the live site. Name and phone are the only required fields.
+         TO WIRE AT BUILD: replace action="#" with the real Gravity Forms endpoint and keep the
+         b-company honeypot. Do NOT re-add a pop-up. The live pop-ups are Popup Maker and may be
+         Pamela's work, so confirm with her before removing them. -->
+    <form class="bform" action="#" method="post" aria-label="Free site evaluation request">
+      <div class="frow">
+        <div><label for="b-name">Name <span class="req" aria-hidden="true">*</span></label><input id="b-name" type="text" name="name" autocomplete="name" required></div>
+        <div><label for="b-city">City or town</label><input id="b-city" type="text" name="city" autocomplete="address-level2"></div>
+      </div>
+      <div class="frow">
+        <div><label for="b-phone">Phone <span class="req" aria-hidden="true">*</span></label><input id="b-phone" type="tel" name="phone" autocomplete="tel" required></div>
+        <div><label for="b-email">Email</label><input id="b-email" type="email" name="email" autocomplete="email"></div>
+      </div>
+      <div class="hp" aria-hidden="true"><label for="b-company">Company</label><input id="b-company" type="text" name="company" tabindex="-1" autocomplete="off"></div>
+      <label for="b-need">What do you need?</label>
+      <select id="b-need" name="need">
+        <option>Septic installation or replacement</option>
+        <option>Septic repair</option>
+        <option>Failed inspection before a home sale</option>
+        <option>Engineering, soil testing or permits</option>
+        <option>Excavation or site work</option>
+        <option>Sewer or drainage</option>
+        <option>Something else</option>
+      </select>
+      <button class="btn btn-solid" type="submit">Request a site evaluation</button>
+      <p class="fnote">Only your name and phone are required. We use your details to quote your job and nothing else. Prefer to talk? Call <a href="tel:+19737020655">(973) 702-0655</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="mapband" aria-label="Where to find us">
+  <a class="maplink" href="https://www.google.com/maps/place/Excavating+New+Jersey+LLC/@41.178584,-74.661811,2654m/data=!3m1!1e3!4m6!3m5!1s0x89c34196557abf97:0x8496b0714be38db4!8m2!3d41.178584!4d-74.661811!16s%2Fg%2F1tcw4kh5" rel="noopener">OPEN IN GOOGLE MAPS &rarr;</a>
+  <iframe src="https://maps.google.com/maps?q=Excavating%20New%20Jersey%20LLC%2C%20406%20County%20Rd%20565%2C%20Wantage%2C%20NJ%2007461&z=14&output=embed" loading="lazy" title="Map to Excavating New Jersey LLC, 406 County Rd 565, Wantage NJ" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <b class="foot-brand">EXCAVATING NEW JERSEY LLC</b>
+      <p>Septic design, installation and excavation, engineered from the soil log up under N.J.A.C. 7:9A.</p>
+      <p>LICENSED + INSURED / NAWT-CERTIFIED INSPECTOR ON STAFF</p>
+    </div>
+    <div>
+      <b class="foot-head">BASE</b>
+      <p><a href="https://www.google.com/maps/place/Excavating+New+Jersey+LLC/@41.178584,-74.661811,2654m/data=!3m1!1e3!4m6!3m5!1s0x89c34196557abf97:0x8496b0714be38db4!8m2!3d41.178584!4d-74.661811!16s%2Fg%2F1tcw4kh5" rel="noopener" style="color:inherit">406 COUNTY RD 565<br>WANTAGE NJ 07461</a></p>
+      <p><a href="tel:+19737020655" class="foot-tel">(973) 702-0655</a></p>
+      <p><a href="mailto:excavatingnj@gmail.com" style="color:inherit">EXCAVATINGNJ@GMAIL.COM</a></p>
+      <p>MON-FRI 8:00-4:30 / SAT 8:00-12:00 / SUN CLOSED</p>
+    </div>
+    <div>
+      <b class="foot-head">INDEX</b>
+      <p class="foot-links"><a href="#ground">01 The ground</a><a href="#code">02 The sequence</a><a href="#svc">03 Scope</a><a href="#area">04 Coverage</a><a href="#closing-date">05 The closing date</a><a href="#reviews">07 The record</a><a href="#contact">Site evaluation</a></p>
+    </div>
+  </div>
+  <div class="wrap foot-base"><span>EXCAVATING NEW JERSEY LLC / SUSSEX + MORRIS COUNTY NJ</span><span>FREE SITE EVALUATIONS + WRITTEN ESTIMATES</span></div>
+</footer>
+
+<a class="tag" href="../">&larr; Option B / The Ground Beneath</a>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = Array.prototype.slice.call(document.querySelectorAll('.rv, .wipe, section h2'));
+  function counters(scope){
+    Array.prototype.forEach.call(scope.querySelectorAll('[data-count]'), function(b){
+      if (b.__done) return; b.__done = true;
+      var target = parseFloat(b.getAttribute('data-count'));
+      var dec = (b.getAttribute('data-count').indexOf('.') > -1) ? 1 : 0;
+      if (reduce) { b.textContent = b.getAttribute('data-count'); return; }
+      var t0 = Date.now(), dur = 900;
+      (function tick(){
+        var p = Math.min(1, (Date.now() - t0) / dur);
+        p = 1 - Math.pow(1 - p, 3);
+        b.textContent = (target * p).toFixed(dec);
+        if (p < 1) setTimeout(tick, 30);
+      })();
+    });
+  }
+  var intro = document.querySelector('.intro');
+  if (intro) setTimeout(function(){ intro.parentNode && intro.parentNode.removeChild(intro); }, 1700);
+  var mapIfr = document.querySelector('.bmap iframe');
+  var overviewSrc = mapIfr ? mapIfr.src : null;
+  var activeTown = null;
+  Array.prototype.forEach.call(document.querySelectorAll('.brow.town'), function(card){
+    function fly(){
+      if (!mapIfr) return;
+      if (activeTown === card) { mapIfr.src = overviewSrc; card.classList.remove('town-on'); activeTown = null; return; }
+      mapIfr.src = 'https://maps.google.com/maps?q=' + encodeURIComponent(card.getAttribute('data-q')) + '&t=k&z=13&output=embed';
+      if (activeTown) activeTown.classList.remove('town-on');
+      card.classList.add('town-on');
+      activeTown = card;
+    }
+    card.addEventListener('click', fly);
+    card.addEventListener('keydown', function(ev){ if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); fly(); } });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.svc-cell'), function(cell){
+    cell.addEventListener('click', function(ev){
+      if (ev.target.closest('details') || ev.target.closest('a')) return;
+      var d = cell.querySelector('details');
+      if (d) d.open = !d.open;
+    });
+  });
+  function mark(e, skipCount){
+    e.classList.add('inview');
+    if (skipCount && e.querySelector('[data-count]')) { cpend.push(e); return; }
+    counters(e);
+  }
+  var cpend = [];
+  if (reduce) { els.forEach(function(e){ mark(e); }); return; }
+  var pending = false;
+  function inview(e){
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var r = e.getBoundingClientRect();
+    return r.top < vh * 0.88 && r.bottom > 0;
+  }
+  function check(){
+    els = els.filter(function(e){
+      if (inview(e)) { mark(e); return false; }
+      return true;
+    });
+    cpend = cpend.filter(function(e){
+      if (inview(e)) { counters(e); return false; }
+      return true;
+    });
+    if (!els.length && !cpend.length) {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    }
+  }
+  function onScroll(){
+    if (pending) return;
+    pending = true;
+    setTimeout(function(){ pending = false; check(); }, 80);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll, {passive:true});
+  check();
+  setTimeout(function(){ els.forEach(function(e){ mark(e, true); }); els = []; }, 4000);
+  setTimeout(function(){ cpend.forEach(counters); cpend = []; }, 30000);
+})();
+</script>
+<script>
+(function(){
+  var v = document.querySelector('.hero-vid');
+  if (!v) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { v.remove(); return; }
+  v.addEventListener('error', function(){ v.remove(); }, true);
+  var p = v.play(); if (p && p.catch) p.catch(function(){});
+})();
+</script>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  bar.innerHTML = '<i></i>';
+  document.body.appendChild(bar);
+  var fill = bar.firstChild, ticking = false;
+  function paint(){
+    ticking = false;
+    var h = document.documentElement.scrollHeight - innerHeight;
+    fill.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, scrollY / h) : 0) + ')';
+  }
+  addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(paint); } }, {passive:true});
+  paint();
+  if (reduce) return;
+  var el = document.querySelector('.hero .label');
+  if (!el) return;
+  var FINAL = el.textContent, CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789/';
+  var t0 = null, DUR = 1100, done = false;
+  function finish(){ if (!done) { done = true; el.textContent = FINAL; } }
+  setTimeout(finish, 1800);
+  document.addEventListener('visibilitychange', finish);
+  function frame(ts){
+    if (done) return;
+    if (!t0) t0 = ts;
+    var p = Math.min(1, (ts - t0) / DUR), keep = Math.floor(FINAL.length * p), out = '';
+    for (var i = 0; i < FINAL.length; i++){
+      var ch = FINAL[i];
+      out += (i < keep || ch === ' ' || ch === '/' || ch === '&' || ch === ',') ? ch : CHARS[(Math.random()*CHARS.length)|0];
+    }
+    el.textContent = out;
+    if (p < 1) requestAnimationFrame(frame); else finish();
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
